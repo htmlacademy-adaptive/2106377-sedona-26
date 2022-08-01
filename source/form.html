@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <title>HTML Academy: Седона</title>
+</head>
+
+<body>
+  <!-- <header class="page-header">
+  </header> -->
+  <main class="">
+    <h1 class="review">Оставьте свой отзыв</h1>
+    <form class="review-form" action="https://echo.htmlacademy.ru/" method="post">
+      <fieldset class="name-field">
+        <legend class="">Представьтесь:</legend>
+        <p class="... name">
+          <label class="" for="field-name">ИМЯ*:</label>
+          <input class="" id="field-name" type="text" name="name" placeholder="Пётр">
+        </p>
+        <p class="... last-name">
+          <label class="" for="field-last-name">ФАМИЛИЯ*:</label>
+          <input class="" id="field-last-name" type="text" name="name" placeholder="Пустота">
+        </p>
+        <p class="... middle-name">
+          <label class="" for="field-middle-name">ИМЯ*:</label>
+          <input class="" id="field-middle-name" type="text" name="name" placeholder="Викторович">
+        </p>
+      </fieldset>
+
+      <fieldset class="contact-info-field">
+        <legend class="">Контактная информация:</legend>
+        <p class="...">
+          <label class="" for="field-phone">Контактный телефон*:</label>
+          <input class="" id="field-phone" type="text" name="phone" placeholder="Введите телефон">
+        </p>
+        <p class="...">
+          <label class="" for="field-mail">Электронная почта*:</label>
+          <input class="" id="field-mail" type="email" name="email" placeholder="Введите e-mail">
+        </p>
+      </fieldset>
+
+      <fieldset class="impression-field">
+        <legend class="">ВАше Общее впечатление:</legend>
+        <ul class="impression...">
+          <li class="">
+            <label class="control">
+              <input class="control-input-radio visually-hidden" type="radio" name="impression"
+                value="Скорее положительное" checked>
+              <span class="control-icon-radio"></span>
+              <span class="visually-hidden">Общее впечатление.</span>
+              <span class="control-caption">Скорее положительное</span>
+            </label>
+          </li>
+          <li class="">
+            <label class="control">
+              <input class="control-input-radio visually-hidden" type="radio" name="impression"
+                value="Скорее отрицательное">
+              <span class="control-icon-radio"></span>
+              <span class="visually-hidden">Общее впечатление.</span>
+              <span class="control-caption">Скорее отрицательное</span>
+            </label>
+          </li>
+          <li class="">
+            <label class="control">
+              <input class="control-input-radio visually-hidden" type="radio" name="impression"
+                value="Затрудняюсь ответить">
+              <span class="control-icon-radio"></span>
+              <span class="visually-hidden">Общее впечатление.</span>
+              <span class="control-caption">Затрудняюсь ответить</span>
+            </label>
+          </li>
+        </ul>
+      </fieldset>
+
+      <fieldset class="sight-field">
+        <legend class="">посещенные достопримечательности:</legend>
+        <ul class="">
+          <li class="">
+            <label class="control">
+              <input class= visually-hidden" type="checkbox" name="" checked>
+              <span class="control-icon"></span>
+              <span class="control-caption">Мост Дьявола</span>
+            </label>
+          </li>
+          <li class="">
+            <label class="control">
+              <input class=" visually-hidden" type="checkbox" name="" checked>
+              <span class="control-icon"></span>
+              <span class="control-caption">Гора-Колокол</span>
+            </label>
+          </li>
+          <li class="">
+            <label class="control">
+              <input class=" visually-hidden" type="checkbox" name="" checked>
+              <span class="control-icon"></span>
+              <span class="control-caption">Слайд-парк</span>
+            </label>
+          </li>
+          <li class="">
+            <label class="control">
+              <input class=" visually-hidden" type="checkbox" name="">
+              <span class="control-icon"></span>
+              <span class="control-caption">Красные скалы</span>
+            </label>
+          </li>
+        </ul>
+      </fieldset>
+
+      <p class="... emotions">
+        <label class="" for="field-emotions">Опишите свои эмоции:</label>
+        <input class="" id="field-emotions" type="text" name="emotions" placeholder="Опишите подробно все свои восторги">
+      </p>
+
+      <button class="send-feedback" type="submit">ОТПРАВИТЬ ОТЗЫВ</button>
+      <span>* — обязательные поля</span>
+    </form>
+  </main>
+<!-- <footer></footer> -->
+<div class="modal-error modal-hidden">
+  <section class="modal-error-content">
+  <span class="">ЧТО-ТО ПОШЛО НЕ ТАК!</span>
+  <span class="">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</span>
+  <button class="" type="button">OK</button>
+  </section>
+</div>
+<div class="modal-correctly modal-hidden">
+  <section class="modal-correctly-content">
+  <span class="">Ваш отзыв отправлен!</span>
+  <span class="">Спасибо за ваше участие, ваш отзыв уже поступил к нам.В ближайшее время мы опубликуем его на сайте.</span>
+  <button class="" type="button">ЗАкРЫТЬ ОКНО</button>
+  </section>
+</div>
+</body>
+</html>
