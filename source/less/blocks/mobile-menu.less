@@ -1,0 +1,35 @@
+.mobile-menu {
+  position: relative;
+  display: flex;
+  width: 320px;
+  margin: 0;
+  min-height: 223px;
+}
+
+.mobile-menu__button-close {
+  position: absolute;
+  width: 22px;
+  height: 22px;
+  border: none;
+  background-image: url("/source/img/index/mobile_close_button_icon.svg");
+  background-color: @background-color;
+  background-position: center;
+  background-repeat: no-repeat;
+  top: 17px;
+  right: 20px;
+}
+
+.mobile-menu__list {
+  display: grid;
+  grid-template-columns: 320px;
+  column-gap: 1px;
+  min-height: 223px;
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+
+.mobile-menu__item {
+  text-align: center;
+  box-shadow: 0 1px 0 rgba(1, 1, 1, 0.2);
+}
