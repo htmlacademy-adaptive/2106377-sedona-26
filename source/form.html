@@ -8,38 +8,41 @@
 </head>
 
 <body>
-  <!-- <header class="page-header container">
-    <h1 class="visually-hidden">СЕДОНА</h1>
-    <a class="page-header__logo logo" href="index.html">
-      <img class="logo__img" src="/source/img/sedona_logo.svg" width="185" height="96" alt="Логотип sedona" />
-    </a>
-    <div class="page-header__hidden-menu hidden-menu">
-      <button class="hidden-menu-button" type="button"></button>
-      <section class="mobile-menu">
-        <h2 class="visually-hidden">Меню</h2>
-        <button class="mobile-menu__button-close" type="button"></button>
-        <ul class="mobile-menu__list">
-          <li class="mobile-menu__item">
-            <a class="mobile-menu__link" href="#">Главная</a>
-          </li>
-          <li class="mobile-menu__item">
-            <a class="mobile-menu__link" href="catalog.html">Фото и видео</a>
-          </li>
-          <li class="mobile-menu__item">
-            <a class="mobile-menu__link" href="form.html">Форма Отзыва</a>
-          </li>
-          <li class="mobile-menu__item">
-            <a class="mobile-menu__link" href="https://htmlacademy.ru/intensive/adaptive">HTML ACADEMY</a>
-          </li>
-        </ul>
-      </section>
-    </div>
+  <header class="page-header container">
+    <div class="nav">
+      <h1 class="visually-hidden">СЕДОНА</h1>
+      <a class="nav__logo" href="index.html">
+        <img class="nav__logo-img" src="./img/sedona_logo.svg" width="185" height="96" alt="Логотип sedona" />
+      </a>
+        <button class="nav__menu-button" type="button"></button>
+        <section class="mobile-menu">
+          <h2 class="visually-hidden">Меню</h2>
+          <button class="mobile-menu__button-close" type="button"></button>
+          <ul class="mobile-menu__list">
+            <li class="mobile-menu__item">
+              <a class="mobile-menu__link mobile-menu__link--index" href="index.html">Главная</a>
+            </li>
+            <li class="mobile-menu__item">
+              <a class="mobile-menu__link" href="catalog.html">Фото и видео</a>
+            </li>
+            <li class="mobile-menu__item">
+              <a class="mobile-menu__link" href="form.html">Форма Отзыва</a>
+            </li>
+            <li class="mobile-menu__item">
+              <a class="mobile-menu__link"
+                href="https://htmlacademy.ru/intensive/adaptive">HTML ACADEMY</a>
+            </li>
+          </ul>
+        </section>
 
-    <img class="page-header__image" src="/source/img/back-mobile.jpg" width="320" height="389"
-      alt="Добро пожаловать в Седону" />
-    <img class="page-header__image-text" src="/source/img/index/welcome_to_sedona_text_index.svg.svg" width="282"
-      height="214" alt="Добро пожаловать в Седону" />
-  </header> -->
+    </div>
+    <div class="picture">
+      <img class="picture__img" src="./img/back-mobile.jpg" width="320" height="389"
+        alt="Добро пожаловать в Седону">
+      <img class="picture__img-text" src="./img/sedona_text_form_catalog.svg.svg" width="229"
+        height="39" alt="Добро пожаловать в Седону">
+    </div>
+  </header>
 
   <main class="main-form container">
     <h2 class="subtitle main-form-slogan">Оставьте свой отзыв</h2>
@@ -145,36 +148,38 @@
           placeholder="Опишите подробно все свои восторги">
       </p>
 
-      <button class="review-form__button button-feedback" type="submit">Отправить отзыв</button>
+      <button class="review-form__button" type="submit">Отправить отзыв</button>
       <p class="review-form__remark">* — обязательные поля</p>
     </form>
   </main>
 
-  <!-- <footer class="page-footer container">
-    <span class="page-footer__teg">#visitSEDONA</span>
+  <footer class="page-footer container">
+    <p class="page-footer__teg">#visitSEDONA</p>
     <h2 class="visually-hidden">Социальные сети</h2>
-    <ul class="page-footer__list-socials">
+    <ul class="page-footer__socials">
       <li class="page-footer__item">
-        <a class="button button-vcontacte" href="https://vk.com/htmlacademy">
+        <a class="page-footer__button page-footer__button--vcontacte" href="https://vk.com/htmlacademy">
           <span class="visually-hidden">vconacte</span>
         </a>
       </li>
       <li class="page-footer__item">
-        <a class="button button-telegram" href="https://t.me/htmlacademy">
+        <a class="page-footer__button page-footer__button--telegram" href="https://t.me/htmlacademy">
           <span class="visually-hidden">telegram</span>
         </a>
       </li>
       <li class="page-footer__item">
-        <a class="button button-youtube" href="https://www.youtube.com/user/htmlacademyru">
+        <a class="page-footer__button page-footer__button--youtube" href="https://www.youtube.com/user/htmlacademyru">
           <span class="visually-hidden">youtube</span>
         </a>
       </li>
     </ul>
-    <span class="page-footer__text">Разработано</span>
-    <a class="page-footer__link" href="https://htmlacademy.ru/intensive/adaptive">
-      <img class="page-footer__icon" src="/source/img/htmlacademy.svg" width="27" height="34" alt="htmlacademy" />
-    </a>
-  </footer> -->
+    <div class="page-footer__developer">
+      <span class="desc page-footer__desc">Разработано</span>
+      <a class="develop-link" href="https://htmlacademy.ru/intensive/adaptive">
+        <img class="develop-link__icon" src="./img/htmlacademy.svg" width="27" height="34" alt="htmlacademy">
+      </a>
+    </div>
+  </footer>
 
   <div class="modal-error modal-error--error modal-error--hidden">
     <section class="modal-error__content">

@@ -1,17 +1,35 @@
 .nav {
+  position: relative;
   width: 100%;
   margin: 0 auto;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
-}
 
-.nav__logo {
-  margin-left: 67px;
-}
+  .nav__logo {
+    margin-left: 67px;
+  }
 
-.nav__hidden-menu {
-  background-color: @background-color;
-  margin-right: 20px;
+  .nav__menu-button {
+    position: absolute;
+    margin-left: 25px;
+    width: 23px;
+    height: 22px;
+    background-image: url("../img/mobile_menu_icon.svg");
+    background-color: transparent;
+    background-position: center;
+    background-repeat: no-repeat;
+    border: none;
+    top: 17px;
+    right: 20px;
+  }
+
+  .nav__menu-button:hover {
+    opacity: 0.6;
+  }
+
+  .nav__menu-button:active {
+    opacity: 0.3;
+  }
 }

@@ -1,18 +1,76 @@
 .advantages {
   margin-top: 35px;
   text-align: center;
-}
 
-.advantages__list {
-  padding: 0;
-  margin-top: 32px;
-  margin-bottom: 0;
-  list-style-type: none;
-}
+  .advantages__list {
+    padding: 0;
+    margin-top: 32px;
+    margin-bottom: 0;
+    list-style-type: none;
+  }
 
-.advantages__item {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
+  .advantages__item {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .advantages__inner {
+    position: relative;
+    padding: 0;
+    padding-left: 50px;
+    margin-top: 32px;
+    margin-bottom: 30px;
+    list-style-type: none;
+  }
+
+  .advantages__title {
+    margin-top: 8px;
+    margin-bottom: 16px;
+    display: block;
+    max-width: 100px;
+    padding-right: 140px;
+    text-align: left;
+  }
+
+  .advantages__title--house::before {
+    content: "";
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    background-image: url("../img/index/housing_first_advantages.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    top: 0;
+    left: 0;
+  }
+
+  .advantages__title--food::before {
+    content: "";
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    background-image: url("../img/index/food_first_advantages.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    top: 140px;
+    left: 0;
+  }
+
+  .advantages__title--souvenir::before {
+    content: "";
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    background-image: url("../img/index/souvenirs_first_advantages.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    top: 260px;
+    left: 0;
+  }
+
+  .advantages__desc {
+    margin: 0;
+    text-align: left;
+    margin-bottom: 22px;
+  }
 }
