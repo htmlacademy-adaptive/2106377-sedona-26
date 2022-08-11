@@ -1,0 +1,41 @@
+.user-data {
+  margin: 0;
+  margin-bottom: 16px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+
+  .user-data__caption {
+    font-family: "PT Sans", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: @font-size-description;
+    line-height: @line-height-description;
+    text-transform: @text-transform-all-page;
+    color: @color-white-bcgr-desc;
+  }
+
+  .user-data__field {
+    font-family: "PT Sans", sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: @font-size-subtitle;
+    line-height: @line-height-subtitle;
+    color: @color-white-bcgr;
+    border: none;
+    background-color: #f2f2f2;
+    padding: 16px;
+
+    .user-data__field--pfone {
+      padding-right: 58px;
+    }
+
+    .user-data__field--mail {
+      padding-right: 58px;
+    }
+  }
+
+  .user-data--last {
+    margin: 0;
+  }
+}
