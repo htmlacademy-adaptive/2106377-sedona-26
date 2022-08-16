@@ -4,8 +4,8 @@
   margin-right: 20px;
 
   .review-form__field-title {
-    max-width: 238px;
-    margin: 0;
+    width: 238px;
+    margin-top: 24px;
     margin-bottom: 20px;
     text-align: center;
   }
@@ -62,14 +62,11 @@
   }
 
   .review-form__button {
-    font-family: "PT Sans", sans-serif;
-    font-style: normal;
-    font-weight: 700;
     font-size: 21px;
     line-height: @line-height-subtitle;
-    color: @color-blue-bcgr;
+    color: @color-white;
     text-transform: @text-transform-all-page;
-    background-color: @background-color;
+    background-color: @background-color-blue;
     cursor: pointer;
     border: none;
     padding: 19px 34px 13px 32px;
@@ -98,5 +95,45 @@
     text-align: center;
     padding-left: 73px;
     margin: 0;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .review-form {
+    width: 648px;
+    margin-left: 60px;
+    margin-right: 60px;
+    display: grid;
+    grid-template-columns: 280px 298px;
+    grid-template-rows: minmax(338px, 33%) auto auto minmax(320px, 30%);
+    column-gap: 70px;
+    row-gap: 48px;
+  }
+
+  .review-form__impression {
+    grid-column: 1 / 4;
+    margin: 0 36px 0 36px;
+  }
+
+  .review-form__sight {
+    grid-column: 1 / 4;
+  }
+
+  .review-form__review {
+    grid-column: 1 / 4;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+
+  .review-form__list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 16px;
+  }
+
+  .review-form__item {
+    margin-bottom: 16px;
   }
 }

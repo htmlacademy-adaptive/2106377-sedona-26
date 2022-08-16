@@ -3,54 +3,54 @@
 
 <head>
   <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: Седона</title>
   <link rel="stylesheet" href="css/style.css">
 </head>
 
-<body>
+<body class="page-body">
   <header class="page-header container">
     <div class="nav">
       <h1 class="visually-hidden">СЕДОНА</h1>
       <a class="nav__logo" href="#">
         <img class="nav__logo-img" src="./img/sedona_logo.svg" width="185" height="96" alt="Логотип sedona" />
       </a>
-        <button class="nav__menu-button" type="button"></button>
-        <section class="mobile-menu">
-          <h2 class="visually-hidden">Меню</h2>
-          <button class="mobile-menu__button-close" type="button"></button>
-          <ul class="mobile-menu__list">
-            <li class="mobile-menu__item">
-              <a class="mobile-menu__link mobile-menu__link--index" href="#">Главная</a>
-            </li>
-            <li class="mobile-menu__item">
-              <a class="mobile-menu__link" href="catalog.html">Фото и видео</a>
-            </li>
-            <li class="mobile-menu__item">
-              <a class="mobile-menu__link" href="form.html">Форма Отзыва</a>
-            </li>
-            <li class="mobile-menu__item">
-              <a class="mobile-menu__link"
-                href="https://htmlacademy.ru/intensive/adaptive">HTML ACADEMY</a>
-            </li>
-          </ul>
-        </section>
+      <button class="nav__menu-button nav__menu-button--hidden" type="button"></button>
+      <section class="menu">
+        <h2 class="visually-hidden">Меню</h2>
+        <button class="menu__button-close" type="button"></button>
+        <ul class="menu__list">
+          <li class="menu__item">
+            <a class="menu__link menu__link--index" href="#">Главная</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="catalog.html">Фото и видео</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="form.html">Форма Отзыва</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="https://htmlacademy.ru/intensive/adaptive">HTML ACADEMY</a>
+          </li>
+        </ul>
+      </section>
 
     </div>
     <div class="picture">
-      <img class="picture__img" src="./img/back-mobile.jpg" width="320" height="389"
+      <img class="picture__img" src="./img/back-mobile.jpg" width="320" height="389" alt="Добро пожаловать в Седону">
+      <img class="picture__img-text" src="./img/index/welcome_to_sedona_text_index.svg.svg" width="282" height="214"
         alt="Добро пожаловать в Седону">
-      <img class="picture__img-text" src="./img/index/welcome_to_sedona_text_index.svg.svg" width="282"
-        height="214" alt="Добро пожаловать в Седону">
     </div>
   </header>
 
   <main class="main-index container">
     <h2 class="subtitle main-index__slogan">Седона — небольшой <br>городок в Аризоне, зaслуживающий большего!</h2>
     <p class="desc main-index__desc">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
+
     <section class="advantages">
       <ul class="advantages__list">
         <li class="advantages__item advantages__item--large">
-          <div class="first-adv-box">
+          <div class="adv-box">
             <div class="lead">
               <h3 class="lead__title">НАСТОЯЩИЙ ГОРОДОК</h3>
               <p class="lead__text">— №1 —</p>
@@ -81,33 +81,32 @@
           </ul>
         </li>
         <li class="advantages__item advantages__item--medium">
-          <div class="second-adv-box">
-            <div class="lead">
+          <div class="adv-box">
+            <div class="lead lead--medium">
               <h3 class="lead__title">Там есть мост дьявола</h3>
               <span class="lead__text">— №2 —</span>
               <p class="lead__desc">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
             </div>
-            <img class="picture" src="./img/index/devils_bridge.jpg" width="320" height="260"
-              alt="Мост дьявола фото" />
+            <img class="picture" src="./img/index/devils_bridge.jpg" width="320" height="260" alt="Мост дьявола фото" />
           </div>
         </li>
         <li class="advantages__item advantages__item--smаll">
           <ul class="benefits">
-            <li class="advantages__item">
+            <li class="advantages__item lead lead--small">
               <h3 class="subtitle">Небольшая площадь</h3>
               <p class="desc">— №3 —</p>
               <p class="desc">
                 Все интересные места находятся очень близко
               </p>
             </li>
-            <li class="advantages__item">
+            <li class="advantages__item lead lead--small">
               <h3 class="subtitle">Красивая дорога</h3>
               <p class="desc">— №4 —</p>
               <p class="desc">
                 ЕХАТЬ В СЕДОНУ ИЗ ЛАС-ВЕГАСА совсем НЕ СКУЧНО!
               </p>
             </li>
-            <li class="advantages__item">
+            <li class="advantages__item lead lead--small">
               <h3 class="subtitle">Мало туристов</h3>
               <p class="desc">— №5 —</p>
               <p class="desc">
@@ -120,13 +119,14 @@
     </section>
 
     <section class="booking">
-        <h2 class="booking__title">Заинтересовались?</h2>
-        <p class="desc booking__text">
-          Укажите предполагаемые даты поездки, и мы покажем вам лучшие
-          предложения гостиниц в седоне
-        </p>
+      <h2 class="booking__title">Заинтересовались?</h2>
+      <p class="desc booking__text">
+        Укажите предполагаемые даты поездки, и мы покажем вам лучшие
+        предложения гостиниц в седоне
+      </p>
       <a class="booking__link booking__link--disabled" href="booking.html">Найти Гостиницу</a>
     </section>
+
     <iframe class="map"
       src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1700703.1669163096!2d-112.35082264781501!3d34.18093388176511!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2z0KHQtdC00L7QvdCwLCDQkNGA0LjQt9C-0L3QsCA4NjMzNiwg0KHQqNCQ!5e0!3m2!1sru!2sru!4v1659217897825!5m2!1sru!2sru"
       width="320" height="350" style="border: 0" allowfullscreen="" loading="lazy"

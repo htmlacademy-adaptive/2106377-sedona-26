@@ -1,15 +1,12 @@
 .lead {
   padding: 54px 22px 40px 16px;
-  background-color: @background-color;
-  font-family: "PT Sans", sans-serif;
-  font-style: normal;
-  font-weight: 700;
   text-transform: @text-transform-all-page;
+  background-color: @background-color-blue;
+  color: @color-white;
 
   .lead__title {
     font-size: @font-size-subtitle;
     line-height: @line-height-subtitle;
-    color: @color-blue-bcgr;
     margin-top: 0;
     margin-bottom: 11px;
   }
@@ -17,7 +14,6 @@
   .lead__text {
     font-size: @font-size-description;
     line-height: @line-height-description;
-    color: @color-blue-bcgr;
     margin-top: 0;
     margin-bottom: 17px;
   }
@@ -25,7 +21,32 @@
   .lead__desc {
     font-size: @font-size-description;
     line-height: @line-height-description;
-    color: @color-blue-bcgr;
     margin: 0;
+  }
+}
+
+.lead--small {
+  background-color: @background-color-grey;
+}
+
+@media (min-width: @tablet-width) {
+  .lead {
+    max-width: 192px;
+    padding: 40px 32px 44px;
+  }
+
+  .lead .lead--medium {
+    order: 2;
+  }
+}
+
+@media (min-width: @desctop-width) {
+  .lead {
+    max-width: 295px;
+    padding: 47px 52px 56px;
+  }
+
+  .lead .lead--medium {
+    order: 2;
   }
 }
