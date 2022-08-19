@@ -85,8 +85,6 @@
   }
 
   .review-form__remark {
-    font-family: "PT Sans", sans-serif;
-    font-style: normal;
     font-weight: 400;
     font-size: 12px;
     line-height: 21px;
@@ -103,37 +101,192 @@
     width: 648px;
     margin-left: 60px;
     margin-right: 60px;
+    margin-bottom: 64px;
     display: grid;
     grid-template-columns: 280px 298px;
-    grid-template-rows: minmax(338px, 33%) auto auto minmax(320px, 30%);
+    grid-template-rows: minmax(338px, 33%) auto auto minmax(214px, 30%) auto;
     column-gap: 70px;
     row-gap: 48px;
   }
 
-  .review-form__impression {
+  .review-form .review-form__field-title {
+    width: 278px;
+    margin: 0;
+    margin-bottom: 28px;
+    text-align: center;
+  }
+
+  .review-form .review-form__field-title--contact {
+    text-align: left;
+  }
+
+  .review-form .review-form__name-field {
+    margin: 0;
+    margin-bottom: 15px;
+  }
+
+  .review-form .review-form__impression {
     grid-column: 1 / 4;
+    width: 648px;
+    margin: 0;
+  }
+
+  .review-form .review-form__field-title--wide {
+    width: 402px;
+    padding: 0 123px 0 123px;
+  }
+
+  .review-form .review-form__list {
+    width: 575px;
+    display: grid;
+    grid-template-columns: 280px 280px;
+    grid-template-rows: minmax(46px, 20%) minmax(46px, 20%);
+    column-gap: 16px;
+    row-gap: 16px;
     margin: 0 36px 0 36px;
   }
 
-  .review-form__sight {
-    grid-column: 1 / 4;
+  .review-form .review-form__item {
+    margin: 0;
   }
 
-  .review-form__review {
+  .review-form .review-form__sight {
     grid-column: 1 / 4;
+    width: 648px;
+  }
+
+  .review-form .review-form__field-title--sight {
+    width: 308px;
+    padding: 0 170px 0 170px;
+    margin: 0;
+    margin-bottom: 28px;
+  }
+
+  .review-form .review-form__list--sight {
+    width: 480px;
+    grid-template-columns: 224px 224px;
+    column-gap: 32px;
+    margin: 0 84px 0 84px;
+  }
+
+  .review-form .review-form__review {
+    grid-column: 1 / 4;
+    width: 648px;
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
+    margin: 0;
   }
 
-  .review-form__list {
+  .review-form .review-form__button {
+    padding: 19px 60px 13px 60px;
+    margin: 0;
+    width: 324px;
+  }
+
+  .review-form .review-form__remark {
+    margin: 0;
+    margin-top: 23px;
+    margin-left: 62px;
+    width: 192px;
+    padding: 0;
+  }
+}
+
+@media (min-width: @desctop-width) {
+  .review-form {
+    width: 960px;
+    margin-left: 120px;
+    margin-right: 120px;
+    margin-bottom: 64px;
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    gap: 16px;
+    grid-template-columns: 430px 402px;
+    grid-template-rows: minmax(338px, 33%) auto auto minmax(214px, 30%) auto;
+    column-gap: 128px;
+    row-gap: 56px;
   }
 
-  .review-form__item {
-    margin-bottom: 16px;
+  .review-form .review-form__field-title {
+    width: 278px;
+    margin: 0;
+    margin-bottom: 28px;
+    text-align: center;
+  }
+
+  .review-form .review-form__field-title--contact {
+    text-align: center;
+  }
+
+  .review-form .review-form__impression {
+    grid-column: 1 / 4;
+    width: 960px;
+    margin: 0;
+    text-align: center;
+  }
+
+  .review-form .review-form__field-title--wide {
+    width: 400px;
+    padding: 0 184px 0 184px;
+  }
+
+  .review-form .review-form__list {
+    width: 854px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    column-gap: 0;
+    row-gap: 0;
+    margin: 0;
+    padding: 17px 53px;
+  }
+
+  .review-form .review-form__sight {
+    grid-column: 1 / 4;
+    width: 960px;
+  }
+
+  .review-form .review-form__field-title--sight {
+    width: 306px;
+    padding: 0 327px 0 327px;
+    margin: 0;
+    margin-bottom: 28px;
+  }
+
+  .review-form .review-form__list--sight {
+    width: 872px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    column-gap: 0;
+    row-gap: 0;
+    margin: 0;
+    padding: 31px 44px;
+  }
+
+  .review-form .review-form__review {
+    grid-column: 1 / 4;
+    width: 768px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    margin: 0 96px 0 96px;
+  }
+
+  .review-form .review-form__button {
+    padding: 19px 71px 13px 58px;
+    margin: 0;
+    margin-left: 96px;
+    width: 384px;
+  }
+
+  .review-form .review-form__remark {
+    margin: 0;
+    margin-top: 23px;
+    margin-left: 28px;
+    margin-right: 96px;
+    padding: 0;
+    width: 227px;
   }
 }

@@ -68,7 +68,7 @@
       </fieldset>
 
       <fieldset class="review-form__contact-field">
-        <legend class="subtitle review-form__field-title">Контактная информация:</legend>
+        <legend class="subtitle review-form__field-title review-form__field-title--contact">Контактная информация:</legend>
         <p class="user-data">
           <label class="user-data__caption user-data__caption--phone" for="user-phone">Контактный телефон*:</label>
           <input class="user-data__field user-data__field--pfone" id="user-phone" type="text" name="phone"
@@ -81,7 +81,7 @@
       </fieldset>
 
       <fieldset class="review-form__impression">
-        <legend class="subtitle review-form__field-title">Ваше общее впечатление:</legend>
+        <legend class="subtitle review-form__field-title review-form__field-title--wide">Ваше общее впечатление:</legend>
         <ul class="review-form__list">
           <li class="review-form__item">
             <label class="control">
@@ -111,8 +111,8 @@
       </fieldset>
 
       <fieldset class="review-form__sight">
-        <legend class="subtitle review-form__field-title">Посещенные достопримечательности:</legend>
-        <ul class="review-form__list">
+        <legend class="subtitle review-form__field-title review-form__field-title--sight">Посещенные достопримечательности:</legend>
+        <ul class="review-form__list review-form__list--sight">
           <li class="review-form__item">
             <label class="control">
               <input class="control__input" type="checkbox" name="bridge" checked>
@@ -144,9 +144,9 @@
         </ul>
       </fieldset>
 
-      <p class="review-form__review user-review">
-        <label class="subtitle user-review__label" for="user-emotions">Опишите свои эмоции:</label>
-        <input class="user-review__field" id="user-emotions" type="text" name="emotions"
+      <p class="user-data review-form__review">
+        <label class="subtitle review-form__field-title review-form__field-title--wide" for="user-emotions">Опишите свои эмоции:</label>
+        <input class="user-data__field user-data__field--review" id="user-emotions" type="text" name="emotions"
           placeholder="Опишите подробно все свои восторги">
       </p>
 
