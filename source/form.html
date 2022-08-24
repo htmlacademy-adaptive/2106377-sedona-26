@@ -12,36 +12,34 @@
   <header class="page-header container">
     <div class="nav">
       <h1 class="visually-hidden">СЕДОНА</h1>
-      <a class="nav__logo" href="index.html">
+      <a class="nav__logo" href="#">
         <img class="nav__logo-img" src="./img/sedona_logo.svg" width="185" height="96" alt="Логотип sedona" />
       </a>
-        <button class="nav__menu-button nav__menu-button--hidden" type="button"></button>
-        <section class="menu">
-          <h2 class="visually-hidden">Меню</h2>
-          <button class="menu__button-close" type="button"></button>
-          <ul class="menu__list">
-            <li class="menu__item">
-              <a class="menu__link menu__link--index" href="#">Главная</a>
-            </li>
-            <li class="menu__item">
-              <a class="menu__link" href="catalog.html">Фото и видео</a>
-            </li>
-            <li class="menu__item">
-              <a class="menu__link" href="form.html">Форма Отзыва</a>
-            </li>
-            <li class="menu__item">
-              <a class="menu__link"
-                href="https://htmlacademy.ru/intensive/adaptive">HTML ACADEMY</a>
-            </li>
-          </ul>
-        </section>
+      <button class="nav__menu-button nav__menu-button--hidden" type="button"></button>
+      <section class="menu">
+        <h2 class="visually-hidden">Меню</h2>
+        <button class="menu__button-close menu__button-close--hidden" type="button"></button>
+        <ul class="menu__list">
+          <li class="menu__item">
+            <a class="menu__link menu__link--index" href="#">Главная</a>
+          </li>
+          <li class="menu__item menu__item--position-right">
+            <a class="menu__link" href="catalog.html">Фото и видео</a>
+          </li>
+          <li class="menu__item menu__item--position-left">
+            <a class="menu__link" href="form.html">Форма Отзыва</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="https://htmlacademy.ru/intensive/adaptive">HTML ACADEMY</a>
+          </li>
+        </ul>
+      </section>
 
     </div>
     <div class="picture">
-      <img class="picture__img" src="./img/back-mobile.jpg" width="320" height="389"
+      <img class="picture__img" src="./img/back-mobile.jpg" width="320" height="389" alt="Добро пожаловать в Седону">
+      <img class="picture__img-text" src="./img/index/welcome_to_sedona_text_index.svg.svg" width="282" height="214"
         alt="Добро пожаловать в Седону">
-      <img class="picture__img-text" src="./img/index/welcome_to_sedona_text_index.svg.svg" width="282"
-        height="214" alt="Добро пожаловать в Седону">
     </div>
   </header>
 
@@ -69,19 +67,19 @@
 
       <fieldset class="review-form__contact-field">
         <legend class="subtitle review-form__field-title review-form__field-title--contact">Контактная информация:</legend>
-        <p class="user-data">
+        <p class="user-data user-data--tablet">
           <label class="user-data__caption user-data__caption--phone" for="user-phone">Контактный телефон*:</label>
           <input class="user-data__field user-data__field--pfone" id="user-phone" type="text" name="phone"
             placeholder="Введите телефон">
         </p>
-        <p class="user-data">
+        <p class="user-data user-data--tablet">
           <label class="user-data__caption user-data__caption--mail" for="user-mail">Электронная почта*:</label>
           <input class="user-data__field user-data__field--mail" id="user-mail" type="email" name="email" placeholder="Введите e-mail">
         </p>
       </fieldset>
 
       <fieldset class="review-form__impression">
-        <legend class="subtitle review-form__field-title review-form__field-title--wide">Ваше общее впечатление:</legend>
+        <legend class="subtitle review-form__field-title">Ваше общее впечатление:</legend>
         <ul class="review-form__list">
           <li class="review-form__item">
             <label class="control">
@@ -111,7 +109,7 @@
       </fieldset>
 
       <fieldset class="review-form__sight">
-        <legend class="subtitle review-form__field-title review-form__field-title--sight">Посещенные достопримечательности:</legend>
+        <legend class="subtitle review-form__field-title">Посещенные достопримечательности:</legend>
         <ul class="review-form__list review-form__list--sight">
           <li class="review-form__item">
             <label class="control">
@@ -145,7 +143,7 @@
       </fieldset>
 
       <p class="user-data review-form__review">
-        <label class="subtitle review-form__field-title review-form__field-title--wide" for="user-emotions">Опишите свои эмоции:</label>
+        <label class="subtitle review-form__field-title" for="user-emotions">Опишите свои эмоции:</label>
         <input class="user-data__field user-data__field--review" id="user-emotions" type="text" name="emotions"
           placeholder="Опишите подробно все свои восторги">
       </p>

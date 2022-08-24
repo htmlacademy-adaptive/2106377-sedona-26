@@ -1,52 +1,89 @@
 .lead {
-  padding: 54px 22px 40px 16px;
+  width: 100%;
+  max-width: 320px;
+  font-weight: 400;
   text-transform: @text-transform-all-page;
   background-color: @background-color-blue;
   color: @color-white;
 
   .lead__title {
+    width: 100%;
+    max-width: 289px;
+    margin: 0 auto;
+    margin-top: 39px;
+    margin-bottom: 11px;
     font-size: @font-size-subtitle;
     line-height: @line-height-subtitle;
-    margin-top: 0;
-    margin-bottom: 11px;
   }
 
   .lead__text {
+    width: 100%;
+    max-width: 289px;
+    margin: 0 auto;
+    margin-bottom: 17px;
     font-size: @font-size-description;
     line-height: @line-height-description;
-    margin-top: 0;
-    margin-bottom: 17px;
   }
 
   .lead__desc {
+    width: 100%;
+    max-width: 289px;
+    margin: 0 auto;
+    margin-bottom: 35px;
     font-size: @font-size-description;
     line-height: @line-height-description;
-    margin: 0;
   }
 }
 
 .lead--small {
   background-color: @background-color-grey;
+  color: @color-dark-gray;
+}
+
+.lead .lead__title--small {
+  color: @color-black;
 }
 
 @media (min-width: @tablet-width) {
   .lead {
-    max-width: 192px;
-    padding: 40px 32px 44px;
+    max-width: 256px;
   }
 
-  .lead .lead--medium {
-    order: 2;
+  .lead .lead__title {
+    max-width: 184px;
+    margin-top: 43px;
+    margin-bottom: 11px;
+  }
+
+  .lead .lead__text {
+    max-width: 184px;
+    margin-bottom: 17px;
+  }
+
+  .lead .lead__desc {
+    max-width: 184px;
+    margin-bottom: 41px;
   }
 }
 
 @media (min-width: @desctop-width) {
   .lead {
-    max-width: 295px;
-    padding: 47px 52px 56px;
+    max-width: 400px;
   }
 
-  .lead .lead--medium {
-    order: 2;
+  .lead .lead__title {
+    max-width: 243px;
+    margin-top: 51px;
+    margin-bottom: 11px;
+  }
+
+  .lead .lead__text {
+    max-width: 243px;
+    margin-bottom: 17px;
+  }
+
+  .lead .lead__desc {
+    max-width: 243px;
+    margin-bottom: 53px;
   }
 }
