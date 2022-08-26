@@ -1,0 +1,29 @@
+.adv-box {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+@media (min-width: @tablet-width) {
+  .adv-box {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+  }
+
+  .adv-box .adv-box__lead--medium {
+    order: 2;
+  }
+
+  .adv-box .adv-box__picture--medium {
+    order: 1;
+  }
+}
+
+@media (min-width: @desctop-width) {
+  .adv-box {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+  }
+}

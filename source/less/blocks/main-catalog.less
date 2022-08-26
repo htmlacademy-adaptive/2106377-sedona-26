@@ -1,28 +1,107 @@
 .main-catalog {
-  width: 320px;
+  width: 100%;
+  max-width: 320px;
   margin: 0 auto;
+  margin-top: 30px;
   text-align: center;
 
   .main-catalog__slogan {
-    margin-top: 33px;
-    margin-bottom: 0;
-    padding-left: 20px;
-    padding-right: 20px;
+    width: 100%;
+    max-width: 280px;
+    margin: 0 auto;
+    margin-bottom: 30px;
+    padding: 0;
   }
 
   .main-catalog__desc {
+    width: 100%;
     max-width: 280px;
-    margin: 0;
+    margin: 0 auto;
     margin-bottom: 17px;
-    padding-left: 20px;
-    padding-right: 20px;
+    padding: 0;
   }
 
   .main-catalog__heading {
-    margin: 17px 26px 30px 28px;
+    margin: 0;
+    margin-bottom: 30px;
+    padding: 0;
   }
 
   .main-catalog__text {
-    margin: 0 26px 38px 28px;
+    width: 100%;
+    max-width: 266px;
+    margin: 0 auto;
+    margin-bottom: 38px;
+    padding: 0;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .main-catalog {
+    width: 648px;
+    margin: 0 auto;
+    margin-top: 62px;
+    margin-bottom: 40px;
+  }
+
+  .main-catalog .main-catalog__slogan {
+    width: 100%;
+    max-width: 458px;
+    margin: 0 auto;
+    margin-bottom: 30px;
+    font-size: 30px;
+  }
+
+  .main-catalog .main-catalog__desc {
+    width: 100%;
+    max-width: 458px;
+    margin: 0 auto;
+    margin-bottom: 63px;
+  }
+
+  .main-catalog .main-catalog__heading {
+    width: 100%;
+    max-width: 445px;
+    margin: 0 auto;
+    margin-bottom: 30px;
+    font-size: 30px;
+  }
+
+  .main-catalog .main-catalog__text {
+    width: 100%;
+    max-width: 445px;
+    margin: 0 auto;
+    margin-bottom: 66px;
+  }
+}
+
+@media (min-width: @desctop-width) {
+  .main-catalog {
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 105px;
+    margin-bottom: 120px;
+  }
+
+  .main-catalog .main-catalog__slogan {
+    max-width: 458px;
+    margin-bottom: 30px;
+    font-size: 30px;
+  }
+
+  .main-catalog .main-catalog__desc {
+    max-width: 458px;
+    margin-bottom: 70px;
+  }
+
+  .main-catalog .main-catalog__heading {
+    max-width: 445px;
+    margin-bottom: 30px;
+    font-size: 30px;
+  }
+
+  .main-catalog .main-catalog__text {
+    max-width: 445px;
+    margin-bottom: 63px;
   }
 }

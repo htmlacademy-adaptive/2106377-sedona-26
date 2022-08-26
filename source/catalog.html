@@ -3,44 +3,43 @@
 
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: Седона</title>
   <link rel="stylesheet" href="css/style.css">
 </head>
 
-<body>
+<body class="page-body">
   <header class="page-header container">
     <div class="nav">
       <h1 class="visually-hidden">СЕДОНА</h1>
       <a class="nav__logo" href="index.html">
         <img class="nav__logo-img" src="./img/sedona_logo.svg" width="185" height="96" alt="Логотип sedona" />
       </a>
-        <button class="nav__menu-button" type="button"></button>
-        <section class="mobile-menu">
-          <h2 class="visually-hidden">Меню</h2>
-          <button class="mobile-menu__button-close" type="button"></button>
-          <ul class="mobile-menu__list">
-            <li class="mobile-menu__item">
-              <a class="mobile-menu__link mobile-menu__link--index" href="index.html">Главная</a>
-            </li>
-            <li class="mobile-menu__item">
-              <a class="mobile-menu__link" href="catalog.html">Фото и видео</a>
-            </li>
-            <li class="mobile-menu__item">
-              <a class="mobile-menu__link" href="form.html">Форма Отзыва</a>
-            </li>
-            <li class="mobile-menu__item">
-              <a class="mobile-menu__link"
-                href="https://htmlacademy.ru/intensive/adaptive">HTML ACADEMY</a>
-            </li>
-          </ul>
-        </section>
+      <button class="nav__menu-button nav__menu-button--hidden" type="button"></button>
+      <section class="menu">
+        <h2 class="visually-hidden">Меню</h2>
+        <button class="menu__button-close menu__button-close--hidden" type="button"></button>
+        <ul class="menu__list">
+          <li class="menu__item">
+            <a class="menu__link menu__link--index" href="index.html">Главная</a>
+          </li>
+          <li class="menu__item menu__item--position-right">
+            <a class="menu__link" href="catalog.html">Фото и видео</a>
+          </li>
+          <li class="menu__item menu__item--position-left">
+            <a class="menu__link" href="form.html">Форма Отзыва</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="https://htmlacademy.ru/intensive/adaptive">HTML ACADEMY</a>
+          </li>
+        </ul>
+      </section>
 
     </div>
     <div class="picture">
-      <img class="picture__img" src="./img/back-mobile.jpg" width="320" height="389"
+      <img class="picture__img" src="./img/back-mobile.jpg" width="320" height="389" alt="Добро пожаловать в Седону">
+      <img class="picture__img-text" src="./img/index/welcome_to_sedona_text_index.svg.svg" width="282" height="214"
         alt="Добро пожаловать в Седону">
-      <img class="picture__img-text" src="./img/sedona_text_form_catalog.svg.svg" width="229"
-        height="39" alt="Добро пожаловать в Седону">
     </div>
   </header>
 
@@ -50,14 +49,15 @@
       политике
       и экономике.</p>
     <ul class="content-list">
-      <li class="content-list__item">
+      <li class="content-list__item content-list__item--big">
         <img class="content-list__photo" src="./img/catalog/foreign_spaces.jpg" width="280" height="280"
           alt="Неродные просторы">
-        <h3 class="content-list__title">Неродные просторы</h3>
-        <p class="content-list__author">Автор фото: Борис</p>
-        <div class="favorite">
-          <button class="favorite__like-button favorite__like-button--checked">1350</button>
-        </div>
+            <h3 class="content-list__title">Неродные просторы</h3>
+            <p class="content-list__author">Автор фото: Борис</p>
+            <div class="favorite">
+              <button class="favorite__like-button favorite__like-button--checked">1350</button>
+            </div>
+
       </li>
       <li class="content-list__item">
         <img class="content-list__photo" src="./img/catalog/local_plant.jpg" width="280" height="280"

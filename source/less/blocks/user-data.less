@@ -6,36 +6,47 @@
   flex-wrap: wrap;
 
   .user-data__caption {
-    font-family: "PT Sans", sans-serif;
-    font-style: normal;
     font-weight: 400;
     font-size: @font-size-description;
     line-height: @line-height-description;
     text-transform: @text-transform-all-page;
-    color: @color-white-bcgr-desc;
+    color: @color-dark-gray;
+    margin-left: 16px;
   }
 
   .user-data__field {
-    font-family: "PT Sans", sans-serif;
-    font-style: normal;
-    font-weight: 700;
     font-size: @font-size-subtitle;
     line-height: @line-height-subtitle;
-    color: @color-white-bcgr;
+    color: @color-black;
     border: none;
     background-color: #f2f2f2;
     padding: 16px;
-
-    .user-data__field--pfone {
-      padding-right: 58px;
-    }
-
-    .user-data__field--mail {
-      padding-right: 58px;
-    }
   }
 
-  .user-data--last {
-    margin: 0;
+  .user-data__field--pfone {
+    width: 206px;
+    padding-right: 58px;
+  }
+
+  .user-data__field--mail {
+    width: 206px;
+    padding-right: 58px;
+  }
+
+  .user-data__field--review {
+    padding: 16px;
+    border: none;
+    min-height: 118px;
+    color: rgba(0, 0, 0, 0.3);
+  }
+}
+
+.user-data--last {
+  margin: 0;
+}
+
+@media (min-width: @tablet-width) {
+  .user-data--tablet {
+    margin-left: 18px;
   }
 }

@@ -1,0 +1,128 @@
+.menu {
+  width: 100%;
+  position: relative;
+  margin: 0;
+  padding: 0;
+  min-height: 223px;
+
+  .menu__button-close {
+    position: absolute;
+    width: 22px;
+    height: 22px;
+    border: none;
+    background-image: url("../img/index/mobile_close_button_icon.svg");
+    background-color: @background-color-blue;
+    background-position: center;
+    background-repeat: no-repeat;
+    top: 17px;
+    right: 20px;
+  }
+
+  .menu__list {
+    display: flex;
+    flex-direction: column;
+    min-height: 223px;
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+  }
+
+  .menu__item {
+    text-align: center;
+    box-shadow: 0 1px 0 rgba(1, 1, 1, 0.2);
+    margin-bottom: 1px;
+  }
+
+  .menu__link {
+    display: block;
+    padding: 17px 77px 12px;
+    font-size: @font-size-subtitle;
+    line-height: @line-height-subtitle;
+    text-transform: @text-transform-all-page;
+    color: @color-white;
+    background-color: @background-color-blue;
+    text-decoration: none;
+  }
+
+  .menu__link:hover {
+    background-color: #669ec0;
+  }
+
+  .menu__link:active {
+    background-color: #5496bd;
+    color: rgba(255, 255, 255, 0.3);
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .menu {
+    width: 100%;
+    min-height: 56px;
+  }
+
+  .menu .menu__button-close--hidden {
+    display: none;
+  }
+
+  .menu .menu__list {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    min-height: 56px;
+  }
+
+  .menu .menu__item--position-right {
+    margin-right: 76px;
+  }
+
+  .menu .menu__item--position-left {
+    margin-left: 76px;
+  }
+
+  .menu .menu__link {
+    display: block;
+    width: 153px;
+    padding: 17px 0 17px 0;
+    font-size: 14px;
+    line-height: 21px;
+    color: @color-black;
+    background-color: @background-color-white;
+  }
+}
+
+@media (min-width: @desctop-width) {
+  .menu {
+    width: 100%;
+    min-height: 56px;
+  }
+
+  .menu .menu__button-close--hidden {
+    display: none;
+  }
+
+  .menu .menu__list {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    min-height: 56px;
+  }
+
+  .menu .menu__item--position-right {
+    margin-right: 120px;
+  }
+
+  .menu .menu__item--position-left {
+    margin-left: 120px;
+  }
+
+  .menu .menu__link {
+    display: block;
+    width: 240px;
+    padding: 17px 0 17px 0;
+    font-size: 14px;
+    line-height: 21px;
+    color: @color-black;
+    background-color: @background-color-white;
+  }
+}

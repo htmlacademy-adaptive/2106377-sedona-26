@@ -2,5 +2,25 @@
   list-style-type: none;
   padding: 26px 18px;
   margin: 0;
-  background-color: #eeeeee;
+  background-color: @background-color-grey;
+}
+
+@media (min-width: @tablet-width) {
+  .benefits {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    padding: 0;
+  }
+}
+
+@media (min-width: @desctop-width) {
+  .benefits {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    padding: 0;
+  }
 }
