@@ -10,18 +10,17 @@
 
 <body class="page-body">
   <header class="page-header container">
-    <div class="nav">
-      <h1 class="visually-hidden">СЕДОНА</h1>
+    <h1 class="visually-hidden">СЕДОНА</h1>
+    <div class="nav nav--closed nav--nojs">
       <a class="nav__logo" href="index.html">
         <img class="nav__logo-img" src="./img/sedona_logo.svg" width="185" height="96" alt="Логотип sedona" />
       </a>
-      <button class="nav__menu-button nav__menu-button--hidden" type="button"></button>
+      <button class="nav__menu-button" type="button"></button>
       <section class="menu">
         <h2 class="visually-hidden">Меню</h2>
-        <button class="menu__button-close menu__button-close--hidden" type="button"></button>
         <ul class="menu__list">
           <li class="menu__item">
-            <a class="menu__link menu__link--index" href="index.html">Главная</a>
+            <a class="menu__link menu__link--current" href="#">Главная</a>
           </li>
           <li class="menu__item menu__item--position-right">
             <a class="menu__link" href="catalog.html">Фото и видео</a>
@@ -109,7 +108,11 @@
     <p class="desc main-catalog__text">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в
       очередной раз!
     </p>
-    <img class="catalog-video" src="./img/video_mobile.jpg" width="280" height="177" alt="Седона видеопрезентация">
+    <div class="catalog-video">
+      <button class="catalog-video__button"></button>
+      <span class="visually-hidden">Воспроизвести видео</span>
+      <video class="catalog-video__img" width="280" poster="./img/video_mobile.jpg">Седона видеопрезентация</video>
+    </div>
   </main>
 
   <footer class="page-footer container">

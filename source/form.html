@@ -10,18 +10,17 @@
 
 <body class="page-body">
   <header class="page-header container">
-    <div class="nav">
-      <h1 class="visually-hidden">СЕДОНА</h1>
-      <a class="nav__logo" href="#">
+    <h1 class="visually-hidden">СЕДОНА</h1>
+    <div class="nav nav--closed nav--nojs">
+      <a class="nav__logo" href="index.html">
         <img class="nav__logo-img" src="./img/sedona_logo.svg" width="185" height="96" alt="Логотип sedona" />
       </a>
-      <button class="nav__menu-button nav__menu-button--hidden" type="button"></button>
+      <button class="nav__menu-button" type="button"></button>
       <section class="menu">
         <h2 class="visually-hidden">Меню</h2>
-        <button class="menu__button-close menu__button-close--hidden" type="button"></button>
         <ul class="menu__list">
           <li class="menu__item">
-            <a class="menu__link menu__link--index" href="#">Главная</a>
+            <a class="menu__link menu__link--current" href="#">Главная</a>
           </li>
           <li class="menu__item menu__item--position-right">
             <a class="menu__link" href="catalog.html">Фото и видео</a>
@@ -49,7 +48,7 @@
 
     <form class="review-form" action="https://echo.htmlacademy.ru/" method="post">
       <fieldset class="review-form__name-field">
-        <legend class="subtitle review-form__field-title">Представьтесь:</legend>
+        <legend class="subtitle review-form__field-title review-form__field-title--name">Представьтесь:</legend>
         <p class="user-data">
           <label class="user-data__caption" for="user-name">Имя*:</label>
           <input class="user-data__field" id="user-name" type="text" name="name" placeholder="Пётр">
@@ -83,7 +82,7 @@
         <ul class="review-form__list">
           <li class="review-form__item">
             <label class="control">
-              <input class="control__input control__input--radio" type="radio" name="impression"
+              <input class="control__input control__input--radio-checked" type="radio" name="impression"
                 value="Скорее положительное" checked>
               <span class="control__icon-radio"></span>
               <span class="control__caption">Скорее положительное</span>
@@ -91,7 +90,7 @@
           </li>
           <li class="review-form__item">
             <label class="control">
-              <input class="control__input control__input--radio" type="radio" name="impression"
+              <input class="control__input" type="radio" name="impression"
                 value="Скорее отрицательное">
               <span class="control__icon-radio"></span>
               <span class="control__caption">Скорее отрицательное</span>
@@ -99,7 +98,7 @@
           </li>
           <li class="review-form__item review-form__item--last">
             <label class="control">
-              <input class="control__input control__input-radio" type="radio" name="impression"
+              <input class="control__input" type="radio" name="impression"
                 value="Затрудняюсь ответить">
               <span class="control__icon-radio"></span>
               <span class="control__caption">Затрудняюсь ответить</span>
@@ -113,21 +112,21 @@
         <ul class="review-form__list review-form__list--sight">
           <li class="review-form__item">
             <label class="control">
-              <input class="control__input" type="checkbox" name="bridge" checked>
+              <input class="control__input control__input--checkbox-checked" type="checkbox" name="bridge" checked>
               <span class="control__icon"></span>
               <span class="control__caption">Мост Дьявола</span>
             </label>
           </li>
           <li class="review-form__item">
             <label class="control">
-              <input class="control__input" type="checkbox" name="mountain" checked>
+              <input class="control__input control__input--checkbox-checked" type="checkbox" name="mountain" checked>
               <span class="control__icon"></span>
               <span class="control__caption">Гора-Колокол</span>
             </label>
           </li>
           <li class="review-form__item">
             <label class="control">
-              <input class="control__input" type="checkbox" name="park" checked>
+              <input class="control__input control__input--checkbox-checked" type="checkbox" name="park" checked>
               <span class="control__icon"></span>
               <span class="control__caption">Слайд-парк</span>
             </label>

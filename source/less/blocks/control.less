@@ -1,4 +1,5 @@
 .control {
+  position: relative;
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-start;
@@ -14,9 +15,93 @@
   }
 
   .control__input {
-    width: 46px;
-    height: 46px;
+    width: 45px;
+    height: 45px;
     margin: 0;
     margin-right: 16px;
+    opacity: 0;
+    z-index: -1;
+  }
+
+  .control__input--radio-checked + .control__icon-radio::before {
+    content: "";
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background-color: #333333;
+    left: 33%;
+    top: 33%;
+  }
+
+  .control__icon-radio {
+    position: absolute;
+    width: 46px;
+    height: 46px;
+    border-radius: 50%;
+    border: none;
+    background-color: #f2f2f2;
+    left: -1px;
+    right: 0;
+    top: -1px;
+    bottom: 0;
+    cursor: pointer;
+  }
+
+  .control__input + .control__icon-radio:hover {
+    background-color: #e5e5ee;
+  }
+
+  .control__input + .control__icon-radio:active {
+    background-color: #d5d5d5;
+  }
+
+  .control__input--radio-checked + .control__icon-radio:active::before {
+    background-color: rgba(51, 51, 51, 0.3);
+  }
+
+  .control__input + .control__icon-radio:focus {
+    border: 2px solid #b4b4b4;
+  }
+
+  .control__icon {
+    position: absolute;
+    width: 46px;
+    height: 46px;
+    border: none;
+    background-color: #f2f2f2;
+    left: -1px;
+    right: 0;
+    top: -1px;
+    bottom: 0;
+    cursor: pointer;
+  }
+
+  .control__input--checkbox-checked + .control__icon::before {
+    content: "";
+    position: absolute;
+    width: 22px;
+    height: 16px;
+    background-image: url("../img/checkbox_tick.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    left: 33%;
+    top: 33%;
+  }
+
+  .control__input + .control__icon:hover {
+    background-color: #e5e5ee;
+  }
+
+  .control__input + .control__icon:active {
+    background-color: #d5d5d5;
+  }
+
+  .control__input--radio-checked + .control__icon:active::before {
+    background-color: rgba(51, 51, 51, 0.3);
+  }
+
+  .control__input + .control__icon:focus {
+    outline: 2px solid #b4b4b4;
   }
 }
