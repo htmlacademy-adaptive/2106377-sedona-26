@@ -6,12 +6,16 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: Седона</title>
   <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="favicon.ico">
+  <link rel="icon" href="img/favicon/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="img/favicon/apple-icon-180x180.png">
+  <link rel="manifest" href="manifest.webmanifest">
 </head>
 
 <body class="page-body">
   <header class="page-header container">
     <h1 class="visually-hidden">СЕДОНА</h1>
-    <div class="nav nav--closed nav--nojs">
+    <div class="nav nav--opened nav--nojs">
       <a class="nav__logo" href="index.html">
         <img class="nav__logo-img" src="./img/sedona_logo.svg" width="185" height="96" alt="Логотип sedona" />
       </a>
@@ -36,9 +40,12 @@
 
     </div>
     <div class="picture">
-      <img class="picture__img" src="./img/back-mobile.jpg" width="320" height="389" alt="Добро пожаловать в Седону">
-      <img class="picture__img-text" src="./img/index/welcome_to_sedona_text_index.svg.svg" width="282" height="214"
-        alt="Добро пожаловать в Седону">
+      <picture>
+        <source media="(min-width: 1280px)" srcset="./img/index/welcome_to_sedona_text_index_desctop.svg">
+        <source media="(min-width: 768px)" srcset="./img/index/welcome_to_sedona_text_index_tablet.svg">
+        <img class="picture__img-text" src="./img/index/welcome_to_sedona_text_index.svg"
+          alt="Добро пожаловать в Седону">
+      </picture>
     </div>
   </header>
 
@@ -70,7 +77,7 @@
           <label class="user-data__caption user-data__caption--phone" for="user-phone">Контактный телефон*:</label>
           <input class="user-data__field user-data__field--pfone" id="user-phone" type="text" name="phone"
             placeholder="Введите телефон">
-            <span class="user-data__pfone-icon"></span>
+            <span class="user-data__phone-icon"></span>
         </p>
         <p class="user-data user-data--tablet">
           <label class="user-data__caption user-data__caption--mail" for="user-mail">Электронная почта*:</label>
