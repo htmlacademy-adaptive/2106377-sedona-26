@@ -6,12 +6,16 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: Седона</title>
   <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="favicon.ico">
+  <link rel="icon" href="img/favicon/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="img/favicon/apple-icon-180x180.png">
+  <link rel="manifest" href="manifest.webmanifest">
 </head>
 
 <body class="page-body">
   <header class="page-header container">
     <h1 class="visually-hidden">СЕДОНА</h1>
-    <div class="nav nav--closed nav--nojs">
+    <div class="nav nav--opened nav--nojs">
       <a class="nav__logo" href="index.html">
         <img class="nav__logo-img" src="./img/sedona_logo.svg" width="185" height="96" alt="Логотип sedona" />
       </a>
@@ -36,14 +40,18 @@
 
     </div>
     <div class="picture">
-      <img class="picture__img" src="./img/back-mobile.jpg" width="320" height="389" alt="Добро пожаловать в Седону">
-      <img class="picture__img-text" src="./img/index/welcome_to_sedona_text_index.svg.svg" width="282" height="214"
-        alt="Добро пожаловать в Седону">
+      <picture>
+        <source media="(min-width: 1280px)" srcset="./img/index/welcome_to_sedona_text_index_desctop.svg">
+        <source media="(min-width: 768px)" srcset="./img/index/welcome_to_sedona_text_index_tablet.svg">
+        <img class="picture__img-text" src="./img/index/welcome_to_sedona_text_index.svg"
+          alt="Добро пожаловать в Седону">
+      </picture>
     </div>
   </header>
 
   <main class="main-index container">
-    <h2 class="subtitle main-index__slogan">Седона — небольшой <br class="main-index__br">городок в Аризоне, зaслуживающий большего!</h2>
+    <h2 class="subtitle main-index__slogan">Седона — небольшой <br class="main-index__br">городок в Аризоне,
+      зaслуживающий большего!</h2>
     <p class="desc main-index__desc">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
 
     <section class="advantages">
@@ -55,8 +63,14 @@
               <p class="lead__text">— №1 —</p>
               <p class="lead__desc">Седона не аттракцион для туристов, там течет своя жизнь</p>
             </div>
-            <img class="adv-box__picture" src="./img/index/sedona_real_town.jpg" width="320" height="260"
-              alt="Седона город фото">
+            <picture>
+              <source media="(min-width 1200px)"
+                srcset="./img/index/sedona_real_town_desctop.jpg 1x, ./img/index/sedona_real_town_desctop@2x.jpg 2x">
+              <source media="(min-width: 768px)"
+                srcset="./img/index/sedona_real_town_tablet.jpg 1x, ./img/index/sedona_real_town_tablet@2x.jpg 2x">
+              <img class="adv-box__picture" src="./img/index/sedona_real_town_mobile.jpg"
+                srcset="./img/index/sedona_real_town_mobile@2x.jpg 2x" width="800" height="256" alt="Седона город фото">
+            </picture>
           </div>
           <ul class="advantages__inner">
             <li class="advantages__item">
@@ -86,7 +100,14 @@
               <span class="lead__text">— №2 —</span>
               <p class="lead__desc">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
             </div>
-            <img class="adv-box__picture adv-box__picture--medium" src="./img/index/devils_bridge.jpg" width="320" height="260" alt="Мост дьявола фото" />
+            <picture>
+              <source media="(min-width 1200px)"
+                srcset="./img/index/devils_bridge_desctop.jpg 1x, ./img/index/devils_bridge_desctop@2x.jpg 2x">
+              <source media="(min-width: 768px)"
+                srcset="./img/index/devils_bridge_tablet.jpg 1x, ./img/index/devils_bridge_tablet@2x.jpg 2x">
+              <img class="adv-box__picture adv-box__picture--medium" src="./img/index/devils_bridge_mobile.jpg"
+                srcset="./img/index/devils_bridge_mobile@2x.jpg 2x" width="800" height="256" alt="Мост дьявола фото" />
+            </picture>
           </div>
         </li>
         <li class="advantages__item advantages__item--smаll">

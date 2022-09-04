@@ -10,6 +10,8 @@
 
   .content-list__photo {
     margin-bottom: 15px;
+    max-width: 100%;
+    height: auto;
   }
 
   .content-list__title {
@@ -83,6 +85,19 @@
     grid-template-rows: minmax(400px, 51%) auto;
     gap: 0;
     grid-auto-flow: column;
+  }
+
+  .content-list .content-list__wrapper {
+    margin-top: -75px;
+    background-color: rgba(0, 0, 0, 0.3);
+  }
+
+  .content-list .content-list__title {
+    color: #ffffff;
+  }
+
+  .content-list .content-list__author {
+    color: #ffffff;
   }
 
   .content-list .content-list__item {

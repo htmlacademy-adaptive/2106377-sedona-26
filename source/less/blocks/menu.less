@@ -17,7 +17,6 @@
   .menu__item {
     text-align: center;
     box-shadow: 0 1px 0 rgba(1, 1, 1, 0.2);
-    margin-bottom: 1px;
   }
 
   .menu__link {
@@ -31,7 +30,6 @@
     text-decoration: none;
     border-top: 1px solid #81b3d23b;
     border-bottom: 1px solid #487592;
-    box-shadow: 0 1px 0 rgba(1, 1, 1, 0.2);
   }
 
   .menu__link:hover {
@@ -55,6 +53,10 @@
     flex-wrap: wrap;
     flex-direction: row;
     min-height: 56px;
+  }
+
+  .menu .menu__item {
+    box-shadow: none;
   }
 
   .menu .menu__item--position-right {
@@ -115,12 +117,6 @@
   }
 
   .menu .menu__link {
-    display: block;
     width: 240px;
-    padding: 17px 0 17px 0;
-    font-size: 14px;
-    line-height: 21px;
-    color: @color-black;
-    background-color: @background-color-white;
   }
 }
