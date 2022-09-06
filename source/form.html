@@ -24,28 +24,30 @@
         <h2 class="visually-hidden">Меню</h2>
         <ul class="menu__list">
           <li class="menu__item">
-            <a class="menu__link menu__link--current" href="#">Главная</a>
+            <a class="menu__link" href="index.html">Главная</a>
           </li>
           <li class="menu__item menu__item--position-right">
             <a class="menu__link" href="catalog.html">Фото и видео</a>
           </li>
           <li class="menu__item menu__item--position-left">
-            <a class="menu__link" href="form.html">Форма Отзыва</a>
+            <a class="menu__link menu__link--current" href="#">Форма Отзыва</a>
           </li>
           <li class="menu__item">
             <a class="menu__link" href="https://htmlacademy.ru/intensive/adaptive">HTML ACADEMY</a>
           </li>
         </ul>
       </section>
-
     </div>
-    <div class="picture">
-      <picture>
-        <source media="(min-width: 1280px)" srcset="./img/index/welcome_to_sedona_text_index_desctop.svg">
-        <source media="(min-width: 768px)" srcset="./img/index/welcome_to_sedona_text_index_tablet.svg">
-        <img class="picture__img-text" src="./img/index/welcome_to_sedona_text_index.svg"
-          alt="Добро пожаловать в Седону">
-      </picture>
+
+    <div class="header-picture header-picture--form">
+      <div class="header-picture__inner header-picture__inner--form">
+        <picture>
+          <source media="(min-width: 1280px)" srcset="./img/sedona_text_desctop.svg">
+          <source media="(min-width: 768px)" srcset="./img/sedona_text_tablet.svg">
+          <img class="header-picture__img-text header-picture__img-text-form" src="./img/sedona_text_mobile.svg"
+            alt="Добро пожаловать в Седону">
+        </picture>
+      </div>
     </div>
   </header>
 
@@ -73,13 +75,13 @@
 
       <fieldset class="review-form__contact-field">
         <legend class="subtitle review-form__field-title review-form__field-title--contact">Контактная информация:</legend>
-        <p class="user-data user-data--tablet">
+        <p class="user-data user-data--tablet user-data--desctop">
           <label class="user-data__caption user-data__caption--phone" for="user-phone">Контактный телефон*:</label>
           <input class="user-data__field user-data__field--pfone" id="user-phone" type="text" name="phone"
             placeholder="Введите телефон">
             <span class="user-data__phone-icon"></span>
         </p>
-        <p class="user-data user-data--tablet">
+        <p class="user-data user-data--tablet user-data--desctop">
           <label class="user-data__caption user-data__caption--mail" for="user-mail">Электронная почта*:</label>
           <input class="user-data__field user-data__field--mail" id="user-mail" type="email" name="email" placeholder="Введите e-mail">
           <span class="user-data__mail-icon"></span>
@@ -152,8 +154,7 @@
 
       <p class="user-data review-form__review">
         <label class="subtitle review-form__field-title" for="user-emotions">Опишите свои эмоции:</label>
-        <input class="user-data__field user-data__field--review" id="user-emotions" type="text" name="emotions"
-          placeholder="Опишите подробно все свои восторги">
+        <textarea class="user-data__field user-data__field--review" name="comment" rows="1" placeholder="Опишите подробно все свои восторги"></textarea>
       </p>
 
       <button class="review-form__button" type="submit">Отправить отзыв</button>

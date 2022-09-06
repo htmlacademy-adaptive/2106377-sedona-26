@@ -42,7 +42,7 @@
     padding-right: 58px;
   }
 
-  .user-data__pfone-icon {
+  .user-data__phone-icon {
     position: absolute;
     content: "";
     width: 58px;
@@ -51,8 +51,8 @@
     background-image: url("../img/form_phone.svg");
     background-position: center;
     background-repeat: no-repeat;
-    top: 20px;
-    right: 105px;
+    top: 21px;
+    right: 0;
   }
 
   .user-data__field--mail {
@@ -70,14 +70,14 @@
     background-image: url("../img/form_mail.svg");
     background-repeat: no-repeat;
     background-position: center;
-    top: 20px;
-    right: 105px;
+    top: 21px;
+    right: 0;
   }
 
   .user-data__field--review {
     padding: 16px;
+    padding-bottom: calc(92px + 16px);
     border: none;
-    min-height: 118px;
     color: rgba(0, 0, 0, 0.3);
   }
 }
@@ -89,5 +89,40 @@
 @media (min-width: @tablet-width) {
   .user-data--tablet {
     margin-left: 18px;
+  }
+
+  .user-data .user-data__field--review {
+    padding: 16px 116px 118px;
+  }
+}
+
+@media (min-width: @desctop-width) {
+  .user-data--desctop {
+    margin-left: 0;
+  }
+
+  .user-data .user-data__field--pfone {
+    width: 328px;
+  }
+
+  // .user-data .user-data__phone-icon {
+  //   top: 21px;
+  //   right: 0;
+  // }
+
+  .user-data .user-data__field--mail {
+    width: 328px;
+  }
+
+  // .user-data .user-data__mail-icon {
+  //   top: 21px;
+  //   right: 0;
+  // }
+
+  .user-data .user-data__field--review {
+    width: 100%;
+    max-width: 768px;
+    padding: 16px 16px 118px;
+    margin: 0 auto;
   }
 }
