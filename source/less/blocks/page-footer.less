@@ -14,7 +14,7 @@
 
   .page-footer__socials {
     width: 156px;
-    margin: 0 80px 0 84px;
+    margin: 0 auto;
     padding: 0;
     list-style-type: none;
     display: flex;
@@ -66,17 +66,21 @@
     opacity: 0.3;
   }
 
-  .page-footer__developer {
-    width: 148px;
-    margin: 40px 96px 23px 103px;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    position: relative;
-  }
+  // .page-footer__developer {
+  //   width: 148px;
+  //   margin: 40px 96px 23px 103px;
+  //   display: flex;
+  //   flex-wrap: wrap;
+  //   align-items: center;
+  //   position: relative;
+  // }
 
   .page-footer__develop-link {
     display: block;
+    width: 147px;
+    margin: 0 auto;
+    margin-top: 40px;
+    margin-bottom: 23px;
     text-align: center;
     font-weight: 400;
     font-size: @font-size-description;
@@ -84,19 +88,11 @@
     text-transform: @text-transform-all-page;
     color: @color-black;
     text-decoration: none;
-    padding-right: 36px;
   }
 
-  .page-footer__develop-link::after {
-    content: "";
-    position: absolute;
-    width: 27px;
-    height: 33px;
-    background-image: url("../img/html_footer_black.svg");
-    background-position: center;
-    background-repeat: no-repeat;
-    top: -6px;
-    left: 93px;
+  .page-footer__develop-icon {
+    vertical-align: middle;
+    padding-left: 11px;
   }
 
   .page-footer__develop-link:hover {
