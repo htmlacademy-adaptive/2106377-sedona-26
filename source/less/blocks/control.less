@@ -1,8 +1,9 @@
 .control {
-  position: relative;
   display: flex;
   flex-wrap: wrap;
+  flex-direction: row;
   justify-content: flex-start;
+  width: 280px;
 
   .control__caption {
     font-family: "PT Sans", sans-serif;
@@ -12,18 +13,20 @@
     line-height: @line-height-subtitle;
     color: @color-black;
     padding: 10px 0;
+    padding-left: 16px;
   }
 
-  .control__input {
-    width: 45px;
-    height: 45px;
-    margin: 0;
-    margin-right: 16px;
-    opacity: 0;
-    z-index: -1;
+  .control__icon-radio {
+    position: relative;
+    width: 46px;
+    height: 46px;
+    border-radius: 50%;
+    border: none;
+    background-color: #f2f2f2;
+    cursor: pointer;
   }
 
-  .control__input--radio-checked + .control__icon-radio::before {
+  .control__input:checked + .control__icon-radio::before {
     content: "";
     position: absolute;
     width: 16px;
@@ -34,50 +37,32 @@
     top: 33%;
   }
 
-  .control__icon-radio {
-    position: absolute;
-    width: 46px;
-    height: 46px;
-    border-radius: 50%;
-    border: none;
-    background-color: #f2f2f2;
-    left: -1px;
-    right: 0;
-    top: -1px;
-    bottom: 0;
-    cursor: pointer;
-  }
-
-  .control__input + .control__icon-radio:hover {
+  .control__input:hover + .control__icon-radio {
     background-color: #e5e5ee;
   }
 
-  .control__input + .control__icon-radio:active {
+  .control__input:active + .control__icon-radio {
     background-color: #d5d5d5;
   }
 
-  .control__input--radio-checked + .control__icon-radio:active::before {
+  .control__input:checked:active + .control__icon-radio::before {
     background-color: rgba(51, 51, 51, 0.3);
   }
 
-  .control__icon-radio:focus + .control__input {
+  .control__input:focus + .control__icon-radio {
     outline: 2px solid #ebdbdb;
   }
 
   .control__icon {
-    position: absolute;
+    position: relative;
     width: 46px;
     height: 46px;
     border: none;
     background-color: #f2f2f2;
-    left: -1px;
-    right: 0;
-    top: -1px;
-    bottom: 0;
     cursor: pointer;
   }
 
-  .control__input--checkbox-checked + .control__icon::before {
+  .control__input:checked + .control__icon::before {
     content: "";
     position: absolute;
     width: 22px;
@@ -89,19 +74,19 @@
     top: 33%;
   }
 
-  .control__input + .control__icon:hover {
+  .control__input:hover + .control__icon {
     background-color: #e5e5ee;
   }
 
-  .control__input + .control__icon:active {
+  .control__input:active + .control__icon {
     background-color: #d5d5d5;
   }
 
-  .control__input--radio-checked + .control__icon:active::before {
-    background-color: rgba(51, 51, 51, 0.3);
+  .control__input:checked:active + .control__icon::before {
+    opacity: 0.3;
   }
 
-  .control__input + .control__icon:focus {
+  .control__input:focus + .control__icon {
     outline: 2px solid #ebdbdb;
   }
 }

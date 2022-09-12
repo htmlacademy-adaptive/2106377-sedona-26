@@ -112,6 +112,7 @@
   }
 
   .review-form__button {
+    display: block;
     font-size: 21px;
     line-height: @line-height-subtitle;
     color: @color-white;
@@ -170,6 +171,14 @@
 
   .review-form .review-form__field-title--name {
     padding: 0;
+    position: relative;
+  }
+
+  .review-form .review-form__field-title--name::after {
+    padding: 0;
+    position: absolute;
+    width: 1px;
+    height: 338px;
   }
 
   .review-form .review-form__field-title--contact {
@@ -267,7 +276,7 @@
   }
 
   .review-form .review-form__button {
-    padding: 19px 60px 13px 60px;
+    padding: 19px 60px 13px 49px;
     margin: 0;
     width: 324px;
   }
