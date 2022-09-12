@@ -135,6 +135,10 @@
     color: rgba(255, 255, 255, 0.3);
   }
 
+  .review-form__button:focus {
+    outline: 2px solid #d1c8c8;
+  }
+
   .review-form__remark {
     font-weight: 400;
     font-size: 12px;
@@ -193,8 +197,14 @@
     margin-bottom: 15px;
   }
 
-  .review-form__name-field::before {
-    display: none;
+  .review-form .review-form__name-field::before {
+    content: "";
+    width: 338px;
+    height: 2px;
+    background-color: rgba(219, 219, 219, 1);
+    top: 120px;
+    left: 160px;
+    transform: rotate(90deg);
   }
 
   .review-form__contact-field::before {
@@ -313,6 +323,12 @@
 
   .review-form .review-form__field-title--contact {
     text-align: center;
+    margin-left: 30px;
+  }
+
+  .review-form .review-form__name-field::before {
+    top: 120px;
+    left: 320px;
   }
 
   .review-form .review-form__impression {

@@ -1,44 +1,73 @@
 .favorite {
-  position: relative;
-  text-align: end;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-end;
   width: 69px;
 
   .favorite__like-button {
     padding: 0;
-    padding-top: 5px;
-    padding-left: 37px;
     margin: 0;
+    margin-bottom: 3px;
     border: none;
     cursor: pointer;
     font-weight: 400;
     font-size: @font-size-description;
     line-height: @line-height-description;
     background-color: transparent;
-    color: @color-black;
+    color: rgba(0, 0, 0, 0.3);
   }
 
-  .favorite__like-button::before {
-    content: "";
-    position: absolute;
-    width: 23px;
-    height: 21px;
-    background-image: url("../img/catalog/like-icon.svg");
-    background-position: center;
-    background-repeat: no-repeat;
-    top: 0;
-    left: 0;
+  .favorite__like-icon {
+    vertical-align: middle;
   }
+
+  .favorite__like-text {
+    font-size: 14px;
+    line-height: 21px;
+    text-transform: @text-transform-all-page;
+  }
+}
+
+.favorite--plant {
+  width: 61px;
+}
+
+.favorite--north {
+  width: 53px;
+}
+
+.favorite--bridge {
+  width: 61px;
 }
 
 @media (min-width: @tablet-width) {
   .favorite {
+    width: 64px;
     margin-top: 6px;
     margin-right: 20px;
+  }
+
+  .favorite--plant {
+    width: 56px;
+  }
+
+  .favorite--north {
+    width: 48px;
+  }
+
+  .favorite--bridge {
+    width: 56px;
   }
 }
 
 @media (min-width: @desctop-width) {
   .favorite .favorite__like-button {
+    color: #ffffff;
+    opacity: 1;
+  }
+
+  .favorite .favorite__like-text {
     color: #ffffff;
   }
 }
