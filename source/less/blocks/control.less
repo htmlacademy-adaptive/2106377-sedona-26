@@ -1,7 +1,9 @@
 .control {
   display: flex;
   flex-wrap: wrap;
+  flex-direction: row;
   justify-content: flex-start;
+  width: 280px;
 
   .control__caption {
     font-family: "PT Sans", sans-serif;
@@ -11,12 +13,86 @@
     line-height: @line-height-subtitle;
     color: @color-black;
     padding: 10px 0;
+    padding-left: 16px;
   }
 
-  .control__input {
+  .control__icon-radio {
+    position: relative;
     width: 46px;
     height: 46px;
-    margin: 0;
-    margin-right: 16px;
+    border-radius: 50%;
+    border: none;
+    background-color: #f2f2f2;
+    cursor: pointer;
+  }
+
+  .control__input:checked + .control__icon-radio::before {
+    content: "";
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background-color: #333333;
+    left: 33%;
+    top: 33%;
+  }
+
+  .control__input:hover + .control__icon-radio {
+    background-color: #e5e5ee;
+  }
+
+  .control__input:active + .control__icon-radio {
+    background-color: #d5d5d5;
+  }
+
+  .control__input:checked:active + .control__icon-radio::before {
+    background-color: rgba(51, 51, 51, 0.3);
+  }
+
+  .control__input:focus + .control__icon-radio {
+    outline: 2px solid #d1c8c8;
+  }
+
+  .control__icon {
+    position: relative;
+    width: 46px;
+    height: 46px;
+    border: none;
+    background-color: #f2f2f2;
+    cursor: pointer;
+  }
+
+  .control__input:checked + .control__icon::before {
+    content: "";
+    position: absolute;
+    width: 22px;
+    height: 16px;
+    background-image: url("../img/checkbox_tick.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    left: 33%;
+    top: 33%;
+  }
+
+  .control__input:hover + .control__icon {
+    background-color: #e5e5ee;
+  }
+
+  .control__input:active + .control__icon {
+    background-color: #d5d5d5;
+  }
+
+  .control__input:checked:active + .control__icon::before {
+    opacity: 0.3;
+  }
+
+  .control__input:focus + .control__icon {
+    outline: 2px solid #d1c8c8;
+  }
+}
+
+@media (min-width: @desctop-width) {
+  .control-checkbox-desctop {
+    width: 184px;
   }
 }

@@ -27,9 +27,10 @@
     text-transform: @text-transform-all-page;
     background-color: @background-color-blue;
     color: @color-white;
+    text-decoration: none;
   }
 
-  .booking__link--disabled {
+  .disabled {
     background: #e5e5e5;
   }
 
@@ -40,6 +41,10 @@
   .booking__link:active {
     background-color: #5496bd;
     color: rgba(255, 255, 255, 0.3);
+  }
+
+  .booking__link:focus {
+    outline: 2px solid #d1c8c8;
   }
 }
 

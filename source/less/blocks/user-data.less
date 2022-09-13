@@ -1,4 +1,5 @@
 .user-data {
+  position: relative;
   margin: 0;
   margin-bottom: 16px;
   display: flex;
@@ -23,9 +24,35 @@
     padding: 16px;
   }
 
+  .user-data__field:hover {
+    background-color: #e5e5e5;
+  }
+
+  .user-data__field:active {
+    background-color: #ffffff;
+    outline: 4px solid #e5e5e5;
+  }
+
+  .user-data__field:focus {
+    outline: 2px solid #d1c8c8;
+  }
+
   .user-data__field--pfone {
     width: 206px;
     padding-right: 58px;
+  }
+
+  .user-data__phone-icon {
+    position: absolute;
+    content: "";
+    width: 58px;
+    height: 58px;
+    background-color: #e6e6e6;
+    background-image: url("../img/form_phone.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    top: 21px;
+    right: 0;
   }
 
   .user-data__field--mail {
@@ -33,10 +60,24 @@
     padding-right: 58px;
   }
 
+
+  .user-data__mail-icon {
+    content: "";
+    position: absolute;
+    width: 58px;
+    height: 58px;
+    background: #e6e6e6;
+    background-image: url("../img/form_mail.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    top: 21px;
+    right: 0;
+  }
+
   .user-data__field--review {
     padding: 16px;
+    padding-bottom: calc(92px + 16px);
     border: none;
-    min-height: 118px;
     color: rgba(0, 0, 0, 0.3);
   }
 }
@@ -48,5 +89,30 @@
 @media (min-width: @tablet-width) {
   .user-data--tablet {
     margin-left: 18px;
+  }
+
+  .user-data .user-data__field--review {
+    padding: 16px 116px 118px;
+  }
+}
+
+@media (min-width: @desctop-width) {
+  .user-data--desctop {
+    margin-left: 0;
+  }
+
+  .user-data .user-data__field--pfone {
+    width: 328px;
+  }
+
+  .user-data .user-data__field--mail {
+    width: 328px;
+  }
+
+  .user-data .user-data__field--review {
+    width: 100%;
+    max-width: 768px;
+    padding: 16px 16px 118px;
+    margin: 0 auto;
   }
 }

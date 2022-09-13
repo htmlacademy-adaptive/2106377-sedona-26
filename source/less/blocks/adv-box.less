@@ -2,13 +2,24 @@
   width: 100%;
   display: flex;
   flex-wrap: wrap;
+
+  .adv-box__picture {
+    width: 100%;
+    max-width: 320px;
+    height: auto;
+    object-fit: fill;
+  }
 }
 
 @media (min-width: @tablet-width) {
   .adv-box {
-    width: 100%;
-    display: flex;
+    max-width: 768px;
     flex-direction: row;
+  }
+
+  .adv-box .adv-box__picture {
+    max-width: 512px;
+    max-height: 256px;
   }
 
   .adv-box .adv-box__lead--medium {
@@ -22,8 +33,11 @@
 
 @media (min-width: @desctop-width) {
   .adv-box {
-    width: 100%;
-    display: flex;
+    max-width: 1200px;
     flex-direction: row;
+  }
+
+  .adv-box .adv-box__picture {
+    max-width: 800px;
   }
 }
