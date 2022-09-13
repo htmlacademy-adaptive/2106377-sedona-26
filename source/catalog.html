@@ -13,6 +13,13 @@
 </head>
 
 <body class="page-body">
+  <svg style="display: none;">
+    <symbol id="like-icon" viewBox="0 0 23 21">
+      <path fill="currentColor"
+        d="M12.9636 3.78L12.3364 6.825L11.7091 9.45H14.3227H20.8045V11.55C20.8045 11.55 20.8045 11.55 20.8045 11.655L17.7727 18.9H8.36364V8.4L12.9636 3.78ZM2.09091 10.5V18.9V10.5ZM13.8 0L6.9 6.93C6.48182 7.245 6.27273 7.77 6.27273 8.4V18.9C6.27273 20.055 7.21364 21 8.36364 21H17.7727C18.6091 21 19.3409 20.475 19.6545 19.74L22.7909 12.285C22.8955 12.075 22.8955 11.76 22.8955 11.55V9.45H23C23 8.295 22.0591 7.35 20.9091 7.35H14.3227L15.3682 2.52V2.205C15.3682 1.785 15.1591 1.365 14.95 1.05L13.8 0ZM4.18182 8.4H0V21H4.18182V8.4Z" />
+    </symbol>
+  </svg>
+
   <header class="page-header container">
     <h1 class="visually-hidden">СЕДОНА</h1>
     <div class="nav nav--closed nav--nojs">
@@ -76,9 +83,7 @@
             <button class="favorite__like-button favorite__like-button--checked">
               <svg class="favorite__like-icon" width="23" height="21" viewBox="0 0 23 21" fill="none"
                 xmlns="http://www.w3.org/2000/svg">
-                <path fill="currentColor"
-                  d="M12.9636 3.78L12.3364 6.825L11.7091 9.45H14.3227H20.8045V11.55C20.8045 11.55 20.8045 11.55 20.8045 11.655L17.7727 18.9H8.36364V8.4L12.9636 3.78ZM2.09091 10.5V18.9V10.5ZM13.8 0L6.9 6.93C6.48182 7.245 6.27273 7.77 6.27273 8.4V18.9C6.27273 20.055 7.21364 21 8.36364 21H17.7727C18.6091 21 19.3409 20.475 19.6545 19.74L22.7909 12.285C22.8955 12.075 22.8955 11.76 22.8955 11.55V9.45H23C23 8.295 22.0591 7.35 20.9091 7.35H14.3227L15.3682 2.52V2.205C15.3682 1.785 15.1591 1.365 14.95 1.05L13.8 0ZM4.18182 8.4H0V21H4.18182V8.4Z"
-                  fill="black" />
+                <use xlink:href="#like-icon"></use>
               </svg>
             </button>
             <span class="favorite__like-text">1350</span>
@@ -104,9 +109,7 @@
             <button class="favorite__like-button favorite__like-button--checked">
               <svg class="favorite__like-icon" width="23" height="21" viewBox="0 0 23 21" fill="none"
               xmlns="http://www.w3.org/2000/svg">
-              <path fill="currentColor"
-                d="M12.9636 3.78L12.3364 6.825L11.7091 9.45H14.3227H20.8045V11.55C20.8045 11.55 20.8045 11.55 20.8045 11.655L17.7727 18.9H8.36364V8.4L12.9636 3.78ZM2.09091 10.5V18.9V10.5ZM13.8 0L6.9 6.93C6.48182 7.245 6.27273 7.77 6.27273 8.4V18.9C6.27273 20.055 7.21364 21 8.36364 21H17.7727C18.6091 21 19.3409 20.475 19.6545 19.74L22.7909 12.285C22.8955 12.075 22.8955 11.76 22.8955 11.55V9.45H23C23 8.295 22.0591 7.35 20.9091 7.35H14.3227L15.3682 2.52V2.205C15.3682 1.785 15.1591 1.365 14.95 1.05L13.8 0ZM4.18182 8.4H0V21H4.18182V8.4Z"
-                fill="black" />
+              <use xlink:href="#like-icon"></use>
             </svg>
               </button>
               <span class="favorite__like-text">143</span>
@@ -132,9 +135,7 @@
             <button class="favorite__like-button favorite__like-button--checked">
               <svg class="favorite__like-icon" width="23" height="21" viewBox="0 0 23 21" fill="none"
                 xmlns="http://www.w3.org/2000/svg">
-                <path fill="currentColor"
-                  d="M12.9636 3.78L12.3364 6.825L11.7091 9.45H14.3227H20.8045V11.55C20.8045 11.55 20.8045 11.55 20.8045 11.655L17.7727 18.9H8.36364V8.4L12.9636 3.78ZM2.09091 10.5V18.9V10.5ZM13.8 0L6.9 6.93C6.48182 7.245 6.27273 7.77 6.27273 8.4V18.9C6.27273 20.055 7.21364 21 8.36364 21H17.7727C18.6091 21 19.3409 20.475 19.6545 19.74L22.7909 12.285C22.8955 12.075 22.8955 11.76 22.8955 11.55V9.45H23C23 8.295 22.0591 7.35 20.9091 7.35H14.3227L15.3682 2.52V2.205C15.3682 1.785 15.1591 1.365 14.95 1.05L13.8 0ZM4.18182 8.4H0V21H4.18182V8.4Z"
-                  fill="black" />
+                <use xlink:href="#like-icon"></use>
               </svg>
             </button>
             <span class="favorite__like-text">96</span>
@@ -149,7 +150,7 @@
           <source media="(min-width: 768px) and (max-width: 1200px)"
             srcset="./img/catalog/devils_bridge_tablet.jpg 1x, ./img/catalog/devils_bridge_tablet@2x.jpg 2x">
           <img class="content-list__photo" src="./img/catalog/devils_bridge_mobile.jpg"
-            srcset="./img/catalog/devils_bridge_mobile@2x.jpg 2x" width="400" height="267" alt="Мост дьявола">
+            srcset="./img/catalog/devils_bridge_mobile@2x.jpg 2x" alt="Мост дьявола">
         </picture>
         <div class="content-list__wrapper">
           <div class="content-list__inner">
@@ -160,9 +161,7 @@
             <button class="favorite__like-button favorite__like-button--checked">
               <svg class="favorite__like-icon" width="23" height="21" viewBox="0 0 23 21" fill="none"
                 xmlns="http://www.w3.org/2000/svg">
-                <path fill="currentColor"
-                  d="M12.9636 3.78L12.3364 6.825L11.7091 9.45H14.3227H20.8045V11.55C20.8045 11.55 20.8045 11.55 20.8045 11.655L17.7727 18.9H8.36364V8.4L12.9636 3.78ZM2.09091 10.5V18.9V10.5ZM13.8 0L6.9 6.93C6.48182 7.245 6.27273 7.77 6.27273 8.4V18.9C6.27273 20.055 7.21364 21 8.36364 21H17.7727C18.6091 21 19.3409 20.475 19.6545 19.74L22.7909 12.285C22.8955 12.075 22.8955 11.76 22.8955 11.55V9.45H23C23 8.295 22.0591 7.35 20.9091 7.35H14.3227L15.3682 2.52V2.205C15.3682 1.785 15.1591 1.365 14.95 1.05L13.8 0ZM4.18182 8.4H0V21H4.18182V8.4Z"
-                  fill="black" />
+                <use xlink:href="#like-icon"></use>
               </svg>
             </button>
             <span class="favorite__like-text">254</span>
@@ -178,14 +177,17 @@
       <button class="catalog-video__button"></button>
       <span class="catalog-video__icon"></span>
       <span class="visually-hidden">Воспроизвести видео</span>
-      <video class="catalog-video__img" width="800" poster="./img/catalog/video_mobile.jpg">Седона видеопрезентация>
-        <source media="(min-width: 1200px)"
-          srcset="./img/catalog/video_desktop.jpg 1x, ./img/catalog/video_desktop@2x.jpg 2x">
-        <source media="(min-width: 768px)"
-          srcset="./img/catalog/video_tablet.jpg 1x, ./img/catalog/video_tablet@2x.jpg 2x">
-        <source media="(min-width: 320px)"
-          srcset="./img/catalog/video_mobile.jpg 1x, ./img/catalog/video_mobile@2x.jpg 2x">
-      </video>
+      <div class="catalog-video__img">
+        <picture>
+          <source media="(min-width: 1200px)"
+            srcset="./img/catalog/video_desktop.jpg 1x, ./img/catalog/video_desktop@2x.jpg 2x">
+          <source media="(min-width: 768px)"
+            srcset="./img/catalog/video_tablet.jpg 1x, ./img/catalog/video_tablet@2x.jpg 2x">
+          <img class="video-img" src="./img/catalog/video_mobile.jpg"
+            srcset="./img/catalog/video_mobile@2x.jpg 2x"
+            alt="Седона видеопрезентация">
+        </picture>
+      </div>
     </div>
   </main>
 
