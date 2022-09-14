@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html style="background: #e7e5e5;" lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>HTML Academy: Седона</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="favicon.ico">
+  <link rel="icon" href="img/favicon/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="img/favicon/apple-icon-180x180.png">
+  <link rel="manifest" href="manifest.webmanifest">
+  <base href="https://htmlacademy-adaptive.github.io/2106377-sedona-26/10/">
+</head>
+
+<body class="page-body">
+  <svg style="display: none;">
+    <symbol id="like-icon" viewBox="0 0 23 21">
+      <path fill="currentColor"
+        d="M12.9636 3.78L12.3364 6.825L11.7091 9.45H14.3227H20.8045V11.55C20.8045 11.55 20.8045 11.55 20.8045 11.655L17.7727 18.9H8.36364V8.4L12.9636 3.78ZM2.09091 10.5V18.9V10.5ZM13.8 0L6.9 6.93C6.48182 7.245 6.27273 7.77 6.27273 8.4V18.9C6.27273 20.055 7.21364 21 8.36364 21H17.7727C18.6091 21 19.3409 20.475 19.6545 19.74L22.7909 12.285C22.8955 12.075 22.8955 11.76 22.8955 11.55V9.45H23C23 8.295 22.0591 7.35 20.9091 7.35H14.3227L15.3682 2.52V2.205C15.3682 1.785 15.1591 1.365 14.95 1.05L13.8 0ZM4.18182 8.4H0V21H4.18182V8.4Z" />
+    </symbol>
+  </svg>
+
+  <header class="page-header container">
+    <h1 class="visually-hidden">СЕДОНА</h1>
+    <div class="nav nav--closed nav--nojs">
+      <a class="nav__logo" href="index.html">
+        <img class="nav__logo-img" src="./img/sedona_logo.svg" width="185" height="96" alt="Логотип sedona" />
+      </a>
+      <button class="nav__menu-button" type="button"></button>
+      <section class="menu">
+        <h2 class="visually-hidden">Меню</h2>
+        <ul class="menu__list">
+          <li class="menu__item">
+            <a class="menu__link menu__link--current" href="index.html">Главная</a>
+          </li>
+          <li class="menu__item menu__item--position-right">
+            <a class="menu__link" href="#">Фото и видео</a>
+          </li>
+          <li class="menu__item menu__item--position-left">
+            <a class="menu__link" href="form.html">Форма Отзыва</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="https://htmlacademy.ru/intensive/adaptive">HTML ACADEMY</a>
+          </li>
+        </ul>
+      </section>
+    </div>
+
+    <div class="header-picture">
+      <div class="header-picture__inner">
+        <picture>
+          <source media="(min-width: 1200px)" srcset="./img/index/welcome_to_sedona_text_index_desctop.svg">
+          <source media="(min-width: 768px)" srcset="./img/index/welcome_to_sedona_text_index_tablet.svg">
+          <img class="header-picture__img-text" src="./img/index/welcome_to_sedona_text_index.svg"
+            alt="Добро пожаловать в Седону">
+        </picture>
+      </div>
+    </div>
+
+  </header>
+
+  <main class="main-catalog container">
+    <h2 class="subtitle main-catalog__slogan">Фото и видео</h2>
+    <p class="desc main-catalog__desc">Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о
+      политике
+      и экономике.</p>
+    <ul class="content-list">
+      <li class="content-list__item content-list__item--big">
+        <picture>
+          <source media="(min-width: 1200px)"
+            srcset="./img/catalog/foreign_spaces_desktop.jpg 1x, ./img/catalog/foreign_spaces_desktop@2x.jpg 2x">
+          <source media="(min-width: 768px) and (max-width: 1200px)"
+            srcset="./img/catalog/foreign_spaces_tablet.jpg 1x, ./img/catalog/foreign_spaces_tablet@2x.jpg 2x">
+          <img class="content-list__photo" src="./img/catalog/foreign_spaces_mobile.jpg"
+            srcset="./img/catalog/foreign_spaces_mobile@2x.jpg 2x" width="1200" height="400" alt="Неродные просторы">
+        </picture>
+        <div class="content-list__wrapper">
+          <div class="content-list__inner">
+            <h3 class="content-list__title">Неродные просторы</h3>
+            <p class="content-list__author">Автор фото: Борис</p>
+          </div>
+          <div class="favorite">
+            <button class="favorite__like-button favorite__like-button--checked">
+              <svg class="favorite__like-icon" width="23" height="21" viewBox="0 0 23 21" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <use xlink:href="#like-icon"></use>
+              </svg>
+            </button>
+            <span class="favorite__like-text">1350</span>
+          </div>
+        </div>
+
+      </li>
+      <li class="content-list__item">
+        <picture>
+          <source media="(min-width: 1200px)"
+            srcset="./img/catalog/local_plant_desktop.jpg 1x, ./img/catalog/local_plant_desktop@2x.jpg 2x">
+          <source media="(min-width: 768px) and (max-width: 1200px)"
+            srcset="./img/catalog/local_plant_tablet.jpg 1x, ./img/catalog/local_plant_tablet@2x.jpg 2x">
+          <img class="content-list__photo" src="./img/catalog/local_plant_mobile.jpg"
+            srcset="./img/catalog/local_plant_mobile@2x.jpg 2x" width="400" height="267" alt="Местная растительность">
+        </picture>
+        <div class="content-list__wrapper">
+          <div class="content-list__inner">
+            <h3 class="content-list__title">Местная растительность</h3>
+            <p class="content-list__author">Автор фото: Сергей</p>
+          </div>
+          <div class="favorite favorite--plant">
+            <button class="favorite__like-button favorite__like-button--checked">
+              <svg class="favorite__like-icon" width="23" height="21" viewBox="0 0 23 21" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <use xlink:href="#like-icon"></use>
+            </svg>
+              </button>
+              <span class="favorite__like-text">143</span>
+          </div>
+        </div>
+
+      </li>
+      <li class="content-list__item">
+        <picture>
+          <source media="(min-width: 1200px)"
+            srcset="./img/catalog/road_north_desktop.jpg 1x, ./img/catalog/road_north_desktop@2x.jpg 2x">
+          <source media="(min-width: 768px) and (max-width: 1200px)"
+            srcset="./img/catalog/road_north_tablet.jpg 1x, ./img/catalog/road_north_tablet@2x.jpg 2x">
+          <img class="content-list__photo" src="./img/catalog/road_north_mobile.jpg"
+            srcset="./img/catalog/road_north_mobile@2x.jpg 2x" width="400" height="267" alt="Дорога на север">
+        </picture>
+        <div class="content-list__wrapper">
+          <div class="content-list__inner">
+            <h3 class="content-list__title">Дорога на север</h3>
+            <p class="content-list__author">Автор фото: Петр</p>
+          </div>
+          <div class="favorite favorite--north">
+            <button class="favorite__like-button favorite__like-button--checked">
+              <svg class="favorite__like-icon" width="23" height="21" viewBox="0 0 23 21" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <use xlink:href="#like-icon"></use>
+              </svg>
+            </button>
+            <span class="favorite__like-text">96</span>
+          </div>
+        </div>
+
+      </li>
+      <li class="content-list__item">
+        <picture>
+          <source media="(min-width: 1200px)"
+            srcset="./img/catalog/devils_bridge_desktop.jpg 1x, ./img/catalog/devils_bridge_desktop@2x.jpg 2x">
+          <source media="(min-width: 768px) and (max-width: 1200px)"
+            srcset="./img/catalog/devils_bridge_tablet.jpg 1x, ./img/catalog/devils_bridge_tablet@2x.jpg 2x">
+          <img class="content-list__photo" src="./img/catalog/devils_bridge_mobile.jpg"
+            srcset="./img/catalog/devils_bridge_mobile@2x.jpg 2x" alt="Мост дьявола">
+        </picture>
+        <div class="content-list__wrapper">
+          <div class="content-list__inner">
+            <h3 class="content-list__title">Мост дьявола</h3>
+            <p class="content-list__author">Автор фото: Антон</p>
+          </div>
+          <div class="favorite favorite--bridge">
+            <button class="favorite__like-button favorite__like-button--checked">
+              <svg class="favorite__like-icon" width="23" height="21" viewBox="0 0 23 21" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <use xlink:href="#like-icon"></use>
+              </svg>
+            </button>
+            <span class="favorite__like-text">254</span>
+          </div>
+        </div>
+      </li>
+    </ul>
+    <h2 class="subtitle main-catalog__heading">Все еще сомневаетесь?</h2>
+    <p class="desc main-catalog__text">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в
+      очередной раз!
+    </p>
+    <div class="catalog-video">
+      <button class="catalog-video__button"></button>
+      <span class="catalog-video__icon"></span>
+      <span class="visually-hidden">Воспроизвести видео</span>
+      <div class="catalog-video__img">
+        <picture>
+          <source media="(min-width: 1200px)"
+            srcset="./img/catalog/video_desktop.jpg 1x, ./img/catalog/video_desktop@2x.jpg 2x">
+          <source media="(min-width: 768px)"
+            srcset="./img/catalog/video_tablet.jpg 1x, ./img/catalog/video_tablet@2x.jpg 2x">
+          <img class="video-img" src="./img/catalog/video_mobile.jpg"
+            srcset="./img/catalog/video_mobile@2x.jpg 2x"
+            alt="Седона видеопрезентация">
+        </picture>
+      </div>
+    </div>
+  </main>
+
+  <footer class="page-footer container">
+    <p class="page-footer__teg">#visitSEDONA</p>
+    <h2 class="visually-hidden">Социальные сети</h2>
+    <ul class="page-footer__socials">
+      <li class="page-footer__item">
+        <a class="page-footer__button page-footer__button--vcontacte" href="https://vk.com/htmlacademy">
+          <span class="visually-hidden">vconacte</span>
+        </a>
+      </li>
+      <li class="page-footer__item">
+        <a class="page-footer__button page-footer__button--telegram" href="https://t.me/htmlacademy">
+          <span class="visually-hidden">telegram</span>
+        </a>
+      </li>
+      <li class="page-footer__item">
+        <a class="page-footer__button page-footer__button--youtube" href="https://www.youtube.com/user/htmlacademyru">
+          <span class="visually-hidden">youtube</span>
+        </a>
+      </li>
+    </ul>
+      <a class="page-footer__develop-link" href="https://htmlacademy.ru/intensive/adaptive">Разработано
+        <svg class="page-footer__develop-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 60" width="27" height="34">
+          <path fill="currentColor"
+            d="M30.2 5h-.2l-19.7 2.1v36.2l19.7 11.7 19.7-11.7v-36.2l-19.5-2.1zm17 36.8l-17.2 10.2-17.2-10.2v-14.8l17.1 10.2v1.8l-11.7-7v1.8l11.8 7.1v1.9l-11.8-7v1.8l11.8 7 11.9-7.1v-7.6l5.3-3.2v15.1zm-.1-17l-4.7 2.8-2.2 1.3-10.3-6.1v1.8l8.8 5.3h-.1l-.2.1-1.3.7-7.3-4.3v1.8l5.8 3.4-1.4.9-4.3-2.6v1.8l2.9 1.7-2.9 1.7-17-10.1 17-10.2 17.2 10zm.1-1.8l-17.3-10.2-17.1 10.2v-13.6l17.2-1.8 17.2 1.8v13.6z"></path>
+        </svg>
+      </a>
+  </footer>
+  <script src="js/script.js"></script>
+</body>
+
+</html>
