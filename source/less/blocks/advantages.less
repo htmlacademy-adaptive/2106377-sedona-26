@@ -1,10 +1,13 @@
 .advantages {
-  margin-top: 32px;
+  width: 100%;
+  margin: 0 auto;
+  margin-top: 54px;
+  padding: 0;
 
   .advantages__list {
+    position: relative;
+    margin: 0 auto;
     padding: 0;
-    margin-top: 32px;
-    margin-bottom: 0;
     list-style-type: none;
   }
 
@@ -12,7 +15,7 @@
     max-width: 282px;
     padding: 0;
     margin: 0 auto;
-    margin-top: 32px;
+    margin-top: 25px;
     margin-bottom: 30px;
     list-style-type: none;
   }
@@ -21,7 +24,41 @@
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
-    // justify-content: space-between;
+    margin: 0 auto;
+  }
+
+  .advantages__item--large::before {
+    content: "";
+    position: absolute;
+    width: 160px;
+    height: 32px;
+    background: #81b3d2;
+    clip-path: polygon(0 54%, 0 100%, 100% 100%);
+    top: -32px;
+    left: 0;
+  }
+
+  .advantages__item--large::after {
+    content: "";
+    position: absolute;
+    width: 160px;
+    height: 32px;
+    background: #81b3d2;
+    clip-path: polygon(100% 54%, 0 100%, 100% 100%);
+    top: -32px;
+    left: 160px;
+  }
+
+  .advantages__item--smаll {
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 2px;
+    margin-bottom: 2px;
+    background-color: #eeeeee;
+  }
+
+  .advantages__item--benefits {
+    flex-direction: column;
   }
 
   .advantages__icon {
@@ -30,26 +67,25 @@
   }
 
   .advantages__description {
-    width: 235px;
+    width: 225px;
     margin-left: 7px;
   }
 
   .advantages__description--food {
-    width: 230px;
-    margin-left: 12px;
+    width: 232px;
+    margin-left: 10px;
   }
 
   .advantages__description--souvenir {
-    width: 238px;
+    width: 202px;
     margin-left: 4px;
   }
 
   .advantages__title {
     margin-top: 8px;
-    margin-bottom: 16px;
+    margin-bottom: 15px;
     display: block;
     max-width: 100px;
-    // padding-right: 140px;
     text-align: left;
   }
 
@@ -58,50 +94,11 @@
     text-align: left;
     margin-bottom: 22px;
   }
-
-  // .advantages__icon-house {
-  //   content: "";
-  //   position: absolute;
-  //   width: 40px;
-  //   height: 40px;
-  //   background-image: url("../img/index/housing_first_advantages.svg");
-  //   background-repeat: no-repeat;
-  //   background-position: center;
-  //   top: 50px;
-  //   left: 50px;
-  // }
-
-  // .advantages__title--food::before {
-  //   content: "";
-  //   position: absolute;
-  //   width: 40px;
-  //   height: 40px;
-  //   background-image: url("../img/index/food_first_advantages.svg");
-  //   background-repeat: no-repeat;
-  //   background-position: center;
-  //   top: 140px;
-  //   left: 0;
-  // }
-
-  // .advantages__title--souvenir::before {
-  //   content: "";
-  //   position: absolute;
-  //   width: 40px;
-  //   height: 40px;
-  //   background-image: url("../img/index/souvenirs_first_advantages.svg");
-  //   background-repeat: no-repeat;
-  //   background-position: center;
-  //   top: 260px;
-  //   left: 0;
-  // }
 }
 
 @media (min-width: @tablet-width) {
-  .advantages .advantages__list {
-    padding: 0;
-    margin-top: 32px;
-    margin-bottom: 0;
-    list-style-type: none;
+  .advantages {
+    margin-top: 56px;
   }
 
   .advantages .advantages__item {
@@ -109,11 +106,17 @@
     align-items: center;
   }
 
-  // .advantages .advantages__item--large {
-  //   display: flex;
-  //   flex-wrap: wrap;
-  //   flex-direction: column;
-  // }
+  .advantages .advantages__item--benefits {
+    width: 200px;
+  }
+
+  .advantages__item--large::before {
+    display: none;
+  }
+
+  .advantages__item--large::after {
+    display: none;
+  }
 
   .advantages .advantages__item--medium {
     display: flex;
@@ -153,9 +156,11 @@
     display: block;
     max-width: 193px;
     margin: 0 auto;
-    margin-bottom: 25px;
+    margin-bottom: 22px;
     padding: 0;
     text-align: center;
+    font-size: 21px;
+    line-height: 26px;
   }
 
   .advantages .advantages__desc {
@@ -165,63 +170,26 @@
     text-align: center;
   }
 
-  // .advantages advantages__icon-house {
-  //   content: "";
-  //   // position: absolute;
-  //   width: 75px;
-  //   height: 72px;
-  //   background-image: url("../img/index/housing_first_advantages.svg");
-  //   background-repeat: no-repeat;
-  //   background-position: center;
-  //   background-size: 75px 72px;
-  //   top: 60px;
-  //   left: 90px;
-  // }
-
-  // .advantages .advantages__title--food::before {
-  //   content: "";
-  //   position: absolute;
-  //   width: 76px;
-  //   height: 68px;
-  //   background-image: url("../img/index/food_first_advantages.svg");
-  //   background-repeat: no-repeat;
-  //   background-position: center;
-  //   background-size: 76px 68px;
-  //   top: 60px;
-  //   left: 345px;
-  // }
-
-  // .advantages .advantages__title--souvenir::before {
-  //   content: "";
-  //   position: absolute;
-  //   width: 64px;
-  //   height: 75px;
-  //   background-image: url("../img/index/souvenirs_first_advantages.svg");
-  //   background-repeat: no-repeat;
-  //   background-position: center;
-  //   background-size: 64px 75px;
-  //   top: 60px;
-  //   left: 607px;
-  // }
+  .advantages .advantages__desc--tablet {
+    max-width: 157px;
+  }
 }
 
 @media (min-width: @desctop-width) {
   .advantages {
     width: 100%;
+    margin-top: 42px;
   }
 
   .advantages .advantages__list {
     padding: 0;
-    margin-top: 32px;
     margin-bottom: 0;
     list-style-type: none;
   }
 
-  // .advantages .advantages__item--large {
-  //   display: flex;
-  //   flex-wrap: wrap;
-  //   flex-direction: column;
-  // }
+  .advantages .advantages__item--benefits {
+    width: 300px;
+  }
 
   .advantages .advantages__inner {
     max-width: 1200px;
@@ -233,53 +201,20 @@
 
   .advantages .advantages__description {
     width: 400px;
+    margin-top: 28px;
   }
 
   .advantages .advantages__title {
     display: block;
     max-width: 282px;
+    margin-bottom: 23px;
   }
 
   .advantages .advantages__desc {
     max-width: 282px;
   }
 
-  // .advantages .advantages__title--house::before {
-  //   content: "";
-  //   position: absolute;
-  //   width: 75px;
-  //   height: 72px;
-  //   background-image: url("../img/index/housing_first_advantages.svg");
-  //   background-repeat: no-repeat;
-  //   background-position: center;
-  //   background-size: 75px 72px;
-  //   top: 59px;
-  //   left: 161px;
-  // }
-
-  // .advantages .advantages__title--food::before {
-  //   content: "";
-  //   position: absolute;
-  //   width: 76px;
-  //   height: 68px;
-  //   background-image: url("../img/index/food_first_advantages.svg");
-  //   background-repeat: no-repeat;
-  //   background-position: center;
-  //   background-size: 76px 68px;
-  //   top: 59px;
-  //   left: 561px;
-  // }
-
-  // .advantages .advantages__title--souvenir::before {
-  //   content: "";
-  //   position: absolute;
-  //   width: 64px;
-  //   height: 75px;
-  //   background-image: url("../img/index/souvenirs_first_advantages.svg");
-  //   background-repeat: no-repeat;
-  //   background-position: center;
-  //   background-size: 64px 75px;
-  //   top: 59px;
-  //   left: 967px;
-  // }
+  .advantages .advantages__desc--desctop {
+    max-width: 196px;
+  }
 }
