@@ -1,6 +1,5 @@
 .lead {
   width: 100%;
-  max-width: 320px;
   font-weight: 400;
   text-transform: @text-transform-all-page;
   background-color: @background-color-blue;
@@ -8,17 +7,27 @@
 
   .lead__title {
     width: 100%;
-    max-width: 289px;
+    max-width: 284px;
     margin: 0 auto;
-    margin-top: 39px;
+    margin-top: 34px;
     margin-bottom: 11px;
+    font-weight: 700;
     font-size: @font-size-subtitle;
     line-height: @line-height-subtitle;
   }
 
+  .lead__title--medium {
+    margin-top: 39px;
+  }
+
+  .lead__title--small {
+    margin-top: 26px;
+    color: @color-black;
+  }
+
   .lead__text {
     width: 100%;
-    max-width: 289px;
+    max-width: 284px;
     margin: 0 auto;
     margin-bottom: 17px;
     font-size: @font-size-description;
@@ -27,21 +36,21 @@
 
   .lead__desc {
     width: 100%;
-    max-width: 289px;
+    max-width: 284px;
     margin: 0 auto;
-    margin-bottom: 35px;
+    margin-bottom: 39px;
     font-size: @font-size-description;
     line-height: @line-height-description;
+  }
+
+  .lead__desc--medium {
+    margin-bottom: 33px;
   }
 }
 
 .lead--small {
   background-color: @background-color-grey;
   color: @color-dark-gray;
-}
-
-.lead .lead__title--small {
-  color: @color-black;
 }
 
 @media (min-width: @tablet-width) {
@@ -51,18 +60,27 @@
   }
 
   .lead .lead__title {
-    max-width: 184px;
+    max-width: 192px;
+    font-size: 21px;
+    line-height: 26px;
     margin-top: 40px;
-    margin-bottom: 17px;
+    margin-bottom: 13px;
+  }
+
+  .lead .lead__title--medium {
+    max-width: 150px;
+    font-size: 21px;
+    line-height: 26px;
+    margin-top: 44px;
   }
 
   .lead .lead__text {
-    max-width: 184px;
-    margin-bottom: 31px;
+    max-width: 192px;
+    margin-bottom: 23px;
   }
 
   .lead .lead__desc {
-    max-width: 184px;
+    max-width: 192px;
     margin-bottom: 44px;
   }
 }
@@ -73,18 +91,31 @@
   }
 
   .lead .lead__title {
-    max-width: 243px;
-    margin-top: 51px;
+    max-width: 212px;
+    margin-top: 50px;
     margin-bottom: 11px;
+  }
+
+  .lead .lead__title--medium {
+    max-width: 150px;
+    font-size: 21px;
+    line-height: 26px;
+    margin-top: 52px;
+    margin-bottom: 13px;
   }
 
   .lead .lead__text {
     max-width: 243px;
-    margin-bottom: 17px;
+    margin-bottom: 25px;
   }
 
   .lead .lead__desc {
-    max-width: 243px;
+    max-width: 273px;
     margin-bottom: 53px;
+  }
+
+  .lead .lead__desc--medium {
+    max-width: 226px;
+    margin-top: -2px;
   }
 }
