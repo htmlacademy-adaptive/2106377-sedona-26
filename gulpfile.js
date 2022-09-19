@@ -15,7 +15,7 @@ import del from "del";
 
 // Styles
 export const styles = () => {
- return gulp
+  return gulp
     .src("source/less/style.less", { sourcemaps: true })
     .pipe(plumber())
     .pipe(less())
