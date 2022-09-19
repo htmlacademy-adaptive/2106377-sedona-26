@@ -30,14 +30,12 @@ const html = () => {
   return gulp
     .src("source/*.html")
     .pipe(htmlmin({ collapseWhitespace: true }))
-    .pipe(gulp.dest("build/js"));
+    .pipe(gulp.dest("build"));
 };
 
 // Scripts
 const scripts = () => {
-  return gulp.src("source/js/*.js")
-  .pipe(terser())
-  .pipe(gulp.dest("build/js"));
+  return gulp.src("source/js/*.js").pipe(terser()).pipe(gulp.dest("build/js"));
   // .pipe(browser.stream());
 };
 
@@ -49,8 +47,9 @@ const optimizeImages = () => {
     .pipe(gulp.dest("build/img"));
 };
 
-const copyImages = () => {
-  return gulp.src("source/img/**/*.{jpg,png}").pipe(gulp.dest("build/img"));
+export const copyImages = () => {
+  return gulp.src("source/img/**/**/*.{jpg,png}")
+    .pipe(gulp.dest("build/img"));
 };
 
 // WebP
@@ -66,8 +65,9 @@ const createWebp = () => {
 };
 
 // SVG
-const svg = () => {
+const svg = (done) => {
   gulp.src("source/img/*.svg").pipe(svgo()).pipe(gulp.dest("build/img"));
+  done();
 };
 
 const sprite = () => {
@@ -91,7 +91,7 @@ const copy = (done) => {
         "source/fonts/*.{woff2,woff}",
         "source/*.ico",
         "source/img/favicon/*.png",
-        "manifest.webmanifest",
+        "source/manifest.webmanifest",
       ],
       {
         base: "source",
