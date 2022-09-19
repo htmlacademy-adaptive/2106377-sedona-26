@@ -11,7 +11,7 @@ import terser from "gulp-terser";
 import squoosh from "gulp-libsquoosh";
 import svgo from "gulp-svgmin";
 import svgstore from "gulp-svgstore";
-import del from "del";
+import del  from "del";
 
 // Styles
 export const styles = () => {
@@ -103,6 +103,10 @@ const copy = (done) => {
 const clean = () => {
   return del("build");
 };
+
+// export const clean = () => {
+//   return deleteAsync(app.path.clean);
+// }
 
 // Server
 const server = (done) => {
