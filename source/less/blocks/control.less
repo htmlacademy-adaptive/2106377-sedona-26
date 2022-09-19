@@ -5,7 +5,7 @@
   justify-content: flex-start;
 
   .control__caption {
-    font-family: "PT Sans", sans-serif;
+    font-family: "PT Sans", "Arial", sans-serif;
     font-style: normal;
     font-weight: 700;
     font-size: @font-size-subtitle;
@@ -52,6 +52,10 @@
     outline: 2px solid #d1c8c8;
   }
 
+  .control__input:disabled + .control__icon-radio {
+    background: rgba(242, 242, 242, 0.3);
+  }
+
   .control__icon {
     position: relative;
     width: 46px;
@@ -87,5 +91,9 @@
 
   .control__input:focus + .control__icon {
     outline: 2px solid #d1c8c8;
+  }
+
+  .control__input:disabled + .control__icon {
+    background: rgba(242, 242, 242, 0.3);
   }
 }
