@@ -14,7 +14,6 @@ import svgstore from "gulp-svgstore";
 import del from "del";
 
 // Styles
-
 export const styles = () => {
  return gulp
     .src("source/less/style.less", { sourcemaps: true })
