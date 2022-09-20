@@ -11,7 +11,7 @@ import terser from "gulp-terser";
 import squoosh from "gulp-libsquoosh";
 import svgo from "gulp-svgmin";
 import svgstore from "gulp-svgstore";
-import del  from "del";
+import {deleteAsync} from "del";
 
 // Styles
 export const styles = () => {
@@ -102,16 +102,12 @@ const copy = (done) => {
 };
 
 // Clean
-const clean = () => {
-  return del("build");
-};
-
-// export const clean = () => {
-//   return deleteAsync(app.path.clean);
-// }
+export const clean = () => {
+  return deleteAsync(app.path.clean);
+}
 
 // Server
-const server = (done) => {
+function server(done) {
   browser.init({
     server: {
       baseDir: "build",
@@ -121,7 +117,7 @@ const server = (done) => {
     ui: false,
   });
   done();
-};
+}
 
 // Reload
 const reload = (done) => {
