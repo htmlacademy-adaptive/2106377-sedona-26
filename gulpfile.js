@@ -14,8 +14,8 @@ import svgstore from "gulp-svgstore";
 import {deleteAsync} from "del";
 
 // Styles
-export const styles = () => {
-  return gulp
+export const styles = (done) => {
+  gulp
     .src("source/less/style.less", { sourcemaps: true })
     .pipe(plumber())
     .pipe(less())
@@ -23,38 +23,42 @@ export const styles = () => {
     .pipe(rename("style.min.css"))
     .pipe(gulp.dest("build/css", { sourcemaps: "." }))
     .pipe(browser.stream());
+    done ();
 };
 
 //HTML
-const html = () => {
-  return gulp
+const html = (done) => {
+  gulp
     .src("source/*.html")
     .pipe(htmlmin({ collapseWhitespace: true }))
     .pipe(gulp.dest("build"));
+    done();
 };
 
 // Scripts
-const scripts = () => {
-  return gulp.src("source/js/*.js").pipe(terser()).pipe(gulp.dest("build/js"));
-  // .pipe(browser.stream());
+const scripts = (done) => {
+  gulp.src("source/js/*.js").pipe(terser()).pipe(gulp.dest("build/js"));
+  done();
 };
 
 // Images
-const optimizeImages = () => {
-  return gulp
+const optimizeImages = (done) => {
+  gulp
     .src("source/img/**/*.{jpg,png}")
     .pipe(squoosh())
     .pipe(gulp.dest("build/img"));
+  done();
 };
 
-export const copyImages = () => {
-  return gulp.src("source/img/**/**/*.{jpg,png}")
+export const copyImages = (done) => {
+  gulp.src("source/img/**/**/*.{jpg,png}")
     .pipe(gulp.dest("build/img"));
+    done ();
 };
 
 // WebP
-const createWebp = () => {
-  return gulp
+const createWebp = (done) => {
+  gulp
     .src("source/img/**/*.{jpg,png}")
     .pipe(
       squoosh({
@@ -62,6 +66,7 @@ const createWebp = () => {
       })
     )
     .pipe(gulp.dest("build/img"));
+    done ()
 };
 
 // SVG
@@ -70,8 +75,8 @@ const svg = (done) => {
   done();
 };
 
-const sprite = () => {
-  return gulp
+const sprite = (done) => {
+  gulp
     .src("source/img/sprite/*svg")
     .pipe(svgo())
     .pipe(
@@ -81,7 +86,8 @@ const sprite = () => {
     )
     .pipe(rename("sprite.svg"))
     .pipe(gulp.dest("build/img"));
-};
+    done ();
+  };
 
 // Copy
 const copy = (done) => {
@@ -102,9 +108,10 @@ const copy = (done) => {
 };
 
 // Clean
-export const clean = () => {
-  return deleteAsync(app.path.clean);
-}
+export const clean = (done) => {
+  deleteAsync('build');
+  done();
+};
 
 // Server
 function server(done) {
@@ -117,7 +124,7 @@ function server(done) {
     ui: false,
   });
   done();
-}
+};
 
 // Reload
 const reload = (done) => {
