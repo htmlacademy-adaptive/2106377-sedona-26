@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: Седона</title>
   <link rel="stylesheet" href="css/style.css">
+  <!-- <link rel="stylesheet" href="css/style.min.css"> -->
   <link rel="icon" href="favicon.ico">
   <link rel="icon" href="img/favicon/favicon.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="img/favicon/apple-icon-180x180.png">
@@ -24,7 +25,9 @@
       <a class="nav__logo" href="index.html">
         <img class="nav__logo-img" src="./img/sedona_logo.svg" width="185" height="96" alt="Логотип sedona" />
       </a>
-      <button class="nav__menu-button" type="button"></button>
+      <button class="nav__menu-button" type="button">
+        <span class="visually-hidden">Меню-навигация по сайту</span>
+      </button>
       <section class="menu">
         <h2 class="visually-hidden">Меню</h2>
         <ul class="menu__list">
@@ -158,7 +161,7 @@
       </fieldset>
 
       <div class="user-data review-form__review">
-        <label class="subtitle review-form__field-title" for="user-emotions">Опишите свои эмоции:</label>
+        <label class="subtitle review-form__field-title">Опишите свои эмоции:</label>
         <textarea class="user-data__field user-data__field--review" name="comment" rows="1"
           placeholder="Опишите подробно все свои восторги"></textarea>
         <div class="review-form__review-wrapper">
