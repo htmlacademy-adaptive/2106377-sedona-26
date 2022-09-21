@@ -1,17 +1,17 @@
-import gulp from "gulp";
-import plumber from "gulp-plumber";
-import less from "gulp-less";
-import postcss from "gulp-postcss";
-import csso from "postcss-csso";
-import rename from "gulp-rename";
-import autoprefixer from "autoprefixer";
-import browser from "browser-sync";
-import htmlmin from "gulp-htmlmin";
-import terser from "gulp-terser";
-import squoosh from "gulp-libsquoosh";
-import svgo from "gulp-svgmin";
-import svgstore from "gulp-svgstore";
-import del  from "del";
+import gulp from 'gulp';
+import plumber from 'gulp-plumber';
+import less from 'gulp-less';
+import postcss from 'gulp-postcss';
+import autoprefixer from 'autoprefixer';
+import csso from 'postcss-csso';
+import rename from 'gulp-rename';
+import terser from 'gulp-terser';
+import squoosh from 'gulp-libsquoosh';
+import svgo from 'gulp-svgmin';
+import svgstore from 'gulp-svgstore';
+import del from 'del';
+import browser from 'browser-sync';
+import htmlmin from 'gulp-htmlmin';
 
 // Styles
 export const styles = () => {
@@ -35,44 +35,49 @@ const html = () => {
 
 // Scripts
 const scripts = () => {
-  return gulp.src("source/js/*.js").pipe(terser()).pipe(gulp.dest("build/js"));
-  // .pipe(browser.stream());
+  return gulp.src("source/js/*.js")
+  .pipe(terser())
+  .pipe(gulp.dest("build/js"))
+  .pipe(browser.stream());
 };
 
 // Images
 const optimizeImages = () => {
   return gulp
-    .src("source/img/**/*.{jpg,png}")
+    .src("source/img/**/**/*.{jpg,png}")
     .pipe(squoosh())
     .pipe(gulp.dest("build/img"));
 };
 
-export const copyImages = () => {
+const copyImages = () => {
   return gulp.src("source/img/**/**/*.{jpg,png}")
     .pipe(gulp.dest("build/img"));
 };
 
 // WebP
-const createWebp = () => {
-  return gulp
-    .src("source/img/**/*.{jpg,png}")
+const createWebp = done => {
+  gulp
+    .src("source/img/**/**/*.{jpg,png}")
     .pipe(
       squoosh({
         webp: {},
       })
     )
     .pipe(gulp.dest("build/img"));
+    done();
 };
 
 // SVG
-const svg = (done) => {
-  gulp.src("source/img/*.svg").pipe(svgo()).pipe(gulp.dest("build/img"));
+const svg = done => {
+  gulp.src("source/img/**/*.svg", "!source/img/sprite/*.svg")
+    .pipe(svgo())
+    .pipe(gulp.dest("build/img"));
   done();
 };
 
 const sprite = () => {
   return gulp
-    .src("source/img/sprite/*svg")
+    .src("source/img/sprite/*.svg")
     .pipe(svgo())
     .pipe(
       svgstore({
@@ -102,13 +107,9 @@ const copy = (done) => {
 };
 
 // Clean
-const clean = () => {
-  return del("build");
+export const clean = () => {
+  return del('build');
 };
-
-// export const clean = () => {
-//   return deleteAsync(app.path.clean);
-// }
 
 // Server
 const server = (done) => {
