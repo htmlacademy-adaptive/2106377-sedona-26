@@ -11,6 +11,7 @@ import svgo from 'gulp-svgmin';
 import svgstore from 'gulp-svgstore';
 import del from 'del';
 import browser from 'browser-sync';
+import htmlmin from 'gulp-htmlmin';
 
 // Styles
 export const styles = () => {
@@ -54,7 +55,7 @@ const copyImages = () => {
 };
 
 // WebP
-const createWebp = () => {
+const createWebp = done => {
   gulp
     .src("source/img/**/**/*.{jpg,png}")
     .pipe(
@@ -63,11 +64,14 @@ const createWebp = () => {
       })
     )
     .pipe(gulp.dest("build/img"));
+    done();
 };
 
 // SVG
-const svg = () => {
-  gulp.src("source/img/**/*.svg", "!source/img/sprite/*.svg").pipe(svgo()).pipe(gulp.dest("build/img"));
+const svg = done => {
+  gulp.src("source/img/**/*.svg", "!source/img/sprite/*.svg")
+    .pipe(svgo())
+    .pipe(gulp.dest("build/img"));
   done();
 };
 
