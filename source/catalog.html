@@ -20,8 +20,10 @@
         d="M12.9636 3.78L12.3364 6.825L11.7091 9.45H14.3227H20.8045V11.55C20.8045 11.55 20.8045 11.55 20.8045 11.655L17.7727 18.9H8.36364V8.4L12.9636 3.78ZM2.09091 10.5V18.9V10.5ZM13.8 0L6.9 6.93C6.48182 7.245 6.27273 7.77 6.27273 8.4V18.9C6.27273 20.055 7.21364 21 8.36364 21H17.7727C18.6091 21 19.3409 20.475 19.6545 19.74L22.7909 12.285C22.8955 12.075 22.8955 11.76 22.8955 11.55V9.45H23C23 8.295 22.0591 7.35 20.9091 7.35H14.3227L15.3682 2.52V2.205C15.3682 1.785 15.1591 1.365 14.95 1.05L13.8 0ZM4.18182 8.4H0V21H4.18182V8.4Z" />
     </symbol>
     <symbol id="develop-icon" viewBox="0 0 27 35">
-      <path d="M13.6 0H13.5L0 1.4V26.1L13.5 34.1L26.9 26.1V1.4L13.6 0ZM25 12.1L13.5 5.3V5.2H13.4L13.3 5.1V5.2L1.9 12.1V3.1L13.4 1.9L25 3.1V12.1ZM13.4 6.8L24.9 13.5L20.4 16.1L13.3 11.9V13.3L19.2 16.8L18.3 17.3L13.3 14.3V15.7L17.1 18L16.3 18.5L13.3 16.7V18.1L15.2 19.2L13.4 20.3L2 13.6L13.4 6.8ZM1.9 15.1L13.3 21.9V22.9L5.4 18.2V19.6L13.4 24.4V25.5L5.4 20.8V22.2L13.4 27L21.5 22.1V16.9L24.9 14.9V24.9L13.4 31.8L1.9 25V15.1Z" fill="black"/>
-  </symbol>
+      <path
+        d="M13.6 0H13.5L0 1.4V26.1L13.5 34.1L26.9 26.1V1.4L13.6 0ZM25 12.1L13.5 5.3V5.2H13.4L13.3 5.1V5.2L1.9 12.1V3.1L13.4 1.9L25 3.1V12.1ZM13.4 6.8L24.9 13.5L20.4 16.1L13.3 11.9V13.3L19.2 16.8L18.3 17.3L13.3 14.3V15.7L17.1 18L16.3 18.5L13.3 16.7V18.1L15.2 19.2L13.4 20.3L2 13.6L13.4 6.8ZM1.9 15.1L13.3 21.9V22.9L5.4 18.2V19.6L13.4 24.4V25.5L5.4 20.8V22.2L13.4 27L21.5 22.1V16.9L24.9 14.9V24.9L13.4 31.8L1.9 25V15.1Z"
+        fill="black" />
+    </symbol>
   </svg>
 
   <header class="page-header container">
@@ -72,14 +74,18 @@
       и экономике.</p>
     <ul class="content-list">
       <li class="content-list__item content-list__item--big">
-        <picture>
-          <source media="(min-width: 1200px)"
-            srcset="./img/catalog/foreign_spaces_desktop.jpg 1x, ./img/catalog/foreign_spaces_desktop@2x.jpg 2x">
-          <source media="(min-width: 768px) and (max-width: 1200px)"
-            srcset="./img/catalog/foreign_spaces_tablet.jpg 1x, ./img/catalog/foreign_spaces_tablet@2x.jpg 2x">
-          <img class="content-list__photo" src="./img/catalog/foreign_spaces_mobile.jpg"
-            srcset="./img/catalog/foreign_spaces_mobile@2x.jpg 2x" width="400" height="267" alt="Неродные просторы">
-        </picture>
+        <a class="content-list__link-wrapper" href="#" alt="Неродные просторы">
+          <picture>
+            <source media="(min-width: 1200px)"
+              srcset="./img/catalog/foreign_spaces_desktop.jpg 1x, ./img/catalog/foreign_spaces_desktop@2x.jpg 2x">
+            <source media="(min-width: 768px) and (max-width: 1200px)"
+              srcset="./img/catalog/foreign_spaces_tablet.jpg 1x, ./img/catalog/foreign_spaces_tablet@2x.jpg 2x">
+            <source media="(min-width: 320px)" type="image/webp"
+              srcset="./img/catalog/foreign_spaces_mobile.webp 1x, ./img/catalog/foreign_spaces_mobile@2x.webp 2x">
+            <img class="content-list__photo" src="./img/catalog/foreign_spaces_mobile.jpg"
+              srcset="./img/catalog/foreign_spaces_mobile@2x.jpg 2x" width="400" height="267" alt="Неродные просторы">
+          </picture>
+        </a>
         <div class="content-list__wrapper">
           <div class="content-list__inner">
             <h3 class="content-list__title">Неродные просторы</h3>
@@ -99,14 +105,18 @@
 
       </li>
       <li class="content-list__item">
-        <picture>
-          <source media="(min-width: 1200px)"
-            srcset="./img/catalog/local_plant_desktop.jpg 1x, ./img/catalog/local_plant_desktop@2x.jpg 2x">
-          <source media="(min-width: 768px) and (max-width: 1200px)"
-            srcset="./img/catalog/local_plant_tablet.jpg 1x, ./img/catalog/local_plant_tablet@2x.jpg 2x">
-          <img class="content-list__photo" src="./img/catalog/local_plant_mobile.jpg"
-            srcset="./img/catalog/local_plant_mobile@2x.jpg 2x" width="400" height="267" alt="Местная растительность">
-        </picture>
+        <a class="content-list__link-wrapper" href="#" alt="Местная растительность">
+          <picture>
+            <source media="(min-width: 1200px)"
+              srcset="./img/catalog/local_plant_desktop.jpg 1x, ./img/catalog/local_plant_desktop@2x.jpg 2x">
+            <source media="(min-width: 768px) and (max-width: 1200px)"
+              srcset="./img/catalog/local_plant_tablet.jpg 1x, ./img/catalog/local_plant_tablet@2x.jpg 2x">
+            <source media="(min-width: 320px)" type="image/webp"
+              srcset="./img/catalog/local_plant_mobile.webp 1x, ./img/catalog/local_plant_mobile@2x.webp 2x">
+            <img class="content-list__photo" src="./img/catalog/local_plant_mobile.jpg"
+              srcset="./img/catalog/local_plant_mobile@2x.jpg 2x" width="400" height="267" alt="Местная растительность">
+          </picture>
+        </a>
         <div class="content-list__wrapper">
           <div class="content-list__inner">
             <h3 class="content-list__title">Местная растительность</h3>
@@ -114,25 +124,29 @@
           </div>
           <div class="favorite favorite--plant">
             <button class="favorite__like-button favorite__like-button--checked">
-              <svg class="favorite__like-icon" width="23" height="21" viewBox="0 0 23 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <svg class="favorite__like-icon" width="23" height="21" viewBox="0 0 23 21" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
                 <use xlink:href="#like-icon"></use>
               </svg>
               <span class="visually-hidden">Отметка лайк</span>
             </button>
-              <span class="favorite__like-text">143</span>
+            <span class="favorite__like-text">143</span>
           </div>
         </div>
-
       </li>
       <li class="content-list__item">
-        <picture>
-          <source media="(min-width: 1200px)"
-            srcset="./img/catalog/road_north_desktop.jpg 1x, ./img/catalog/road_north_desktop@2x.jpg 2x">
-          <source media="(min-width: 768px) and (max-width: 1200px)"
-            srcset="./img/catalog/road_north_tablet.jpg 1x, ./img/catalog/road_north_tablet@2x.jpg 2x">
-          <img class="content-list__photo" src="./img/catalog/road_north_mobile.jpg"
-            srcset="./img/catalog/road_north_mobile@2x.jpg 2x" width="400" height="267" alt="Дорога на север">
-        </picture>
+        <a class="content-list__link-wrapper" href="#" alt="Дорога на север">
+          <picture>
+            <source media="(min-width: 1200px)"
+              srcset="./img/catalog/road_north_desktop.jpg 1x, ./img/catalog/road_north_desktop@2x.jpg 2x">
+            <source media="(min-width: 768px) and (max-width: 1200px)"
+              srcset="./img/catalog/road_north_tablet.jpg 1x, ./img/catalog/road_north_tablet@2x.jpg 2x">
+            <source media="(min-width: 320px)" type="image/webp"
+              srcset="./img/catalog/road_north_mobile.webp 1x, ./img/catalog/road_north_mobile@2x.webp 2x">
+            <img class="content-list__photo" src="./img/catalog/road_north_mobile.jpg"
+              srcset="./img/catalog/road_north_mobile@2x.jpg 2x" width="400" height="267" alt="Дорога на север">
+          </picture>
+        </a>
         <div class="content-list__wrapper">
           <div class="content-list__inner">
             <h3 class="content-list__title">Дорога на север</h3>
@@ -149,17 +163,20 @@
             <span class="favorite__like-text">96</span>
           </div>
         </div>
-
       </li>
       <li class="content-list__item content-list__item--last">
-        <picture>
-          <source media="(min-width: 1200px)"
-            srcset="./img/catalog/devils_bridge_desktop.jpg 1x, ./img/catalog/devils_bridge_desktop@2x.jpg 2x">
-          <source media="(min-width: 768px) and (max-width: 1200px)"
-            srcset="./img/catalog/devils_bridge_tablet.jpg 1x, ./img/catalog/devils_bridge_tablet@2x.jpg 2x">
-          <img class="content-list__photo" src="./img/catalog/devils_bridge_mobile.jpg"
-            srcset="./img/catalog/devils_bridge_mobile@2x.jpg 2x" width="400" height="267" alt="Мост дьявола">
-        </picture>
+        <a class="content-list__link-wrapper" href="#" alt="Мост дьявола">
+          <picture>
+            <source media="(min-width: 1200px)"
+              srcset="./img/catalog/devils_bridge_desktop.jpg 1x, ./img/catalog/devils_bridge_desktop@2x.jpg 2x">
+            <source media="(min-width: 768px) and (max-width: 1200px)"
+              srcset="./img/catalog/devils_bridge_tablet.jpg 1x, ./img/catalog/devils_bridge_tablet@2x.jpg 2x">
+            <source media="(min-width: 320px)" type="image/webp"
+              srcset="./img/catalog/devils_bridge_mobile.webp 1x, ./img/catalog/devils_bridge_mobile@2x.webp 2x">
+            <img class="content-list__photo" src="./img/catalog/devils_bridge_mobile.jpg"
+              srcset="./img/catalog/devils_bridge_mobile@2x.jpg 2x" width="400" height="267" alt="Мост дьявола">
+          </picture>
+        </a>
         <div class="content-list__wrapper">
           <div class="content-list__inner">
             <h3 class="content-list__title">Мост дьявола</h3>
@@ -193,8 +210,7 @@
           <source media="(min-width: 768px)"
             srcset="./img/catalog/video_tablet.jpg 1x, ./img/catalog/video_tablet@2x.jpg 2x">
           <img class="catalog-video__image" src="./img/catalog/video_mobile.jpg"
-            srcset="./img/catalog/video_mobile@2x.jpg 2x"
-            alt="Седона видеопрезентация">
+            srcset="./img/catalog/video_mobile@2x.jpg 2x" alt="Седона видеопрезентация">
         </picture>
       </div>
     </div>
@@ -221,7 +237,8 @@
       </li>
     </ul>
     <a class="page-footer__develop-link" href="https://htmlacademy.ru/intensive/adaptive">Разработано
-      <svg class="page-footer__develop-icon" width="27" height="35" viewBox="0 0 27 35" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+      <svg class="page-footer__develop-icon" width="27" height="35" viewBox="0 0 27 35" fill="currentColor"
+        xmlns="http://www.w3.org/2000/svg">
         <use xlink:href="#develop-icon"></use>
       </svg>
       <span class="visually-hidden">Разработано htmlacademy</span>

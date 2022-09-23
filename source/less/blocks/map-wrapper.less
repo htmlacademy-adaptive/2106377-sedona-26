@@ -1,0 +1,48 @@
+.map-wrapper {
+  width: 100%;
+  min-height: 350px;
+  position: relative;
+  text-align: center;
+  margin-top: 49px;
+  margin-bottom: 20px;
+  background-image: url("../img/index/map_mobile.jpg");
+  background-size: 320px auto;
+
+  .map-wrapper::before {
+    content: "";
+    position: absolute;
+    width: 27px;
+    height: 27px;
+    background-image: url("../img/index/map_mobile@2x.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    top: 0;
+    left: 0;
+    z-index: 2;
+  }
+
+  .map-wrapper__map {
+    margin: 0 auto;
+  }
+}
+
+@media (min-resolution: 2dppx) {
+  .map-wrapper {
+    background-image: url("../img/index/map_mobile.jpg@2x.jpg");
+    background-size: 320px auto;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .map {
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 60px;
+  }
+}
+
+@media (min-width: @desctop-width) {
+  .map {
+    margin-top: 66px;
+  }
+}
