@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html style="background: #e7e5e5;" lang="ru">
+<html style="background: #f2f2f2;" lang="ru">
 
 <head>
   <meta charset="utf-8">
@@ -10,7 +10,7 @@
   <link rel="icon" href="img/favicon/favicon.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="img/favicon/apple-icon-180x180.png">
   <link rel="manifest" href="manifest.webmanifest">
-  <link rel="preload" href="fonts/ptsansbold.woff2">
+  <link rel="preload" href="fonts/ptsansbold.woff2" as="font" type="font/woff2" crossorigin>
 </head>
 
 <body class="page-body">
@@ -26,7 +26,7 @@
 
   <header class="page-header container">
     <h1 class="visually-hidden">СЕДОНА</h1>
-    <div class="nav nav--closed nav--nojs">
+    <div class="nav nav--opened nav--nojs">
       <a class="nav__logo" href="index.html">
         <img class="nav__logo-img" src="./img/sedona_logo.svg" width="185" height="96" alt="Логотип sedona" />
       </a>
@@ -37,10 +37,10 @@
         <h2 class="visually-hidden">Меню</h2>
         <ul class="menu__list">
           <li class="menu__item">
-            <a class="menu__link menu__link--current" href="index.html">Главная</a>
+            <a class="menu__link" href="index.html">Главная</a>
           </li>
           <li class="menu__item menu__item--position-right">
-            <a class="menu__link" href="#">Фото и видео</a>
+            <a class="menu__link menu__link--current" href="#">Фото и видео</a>
           </li>
           <li class="menu__item menu__item--position-left">
             <a class="menu__link" href="form.html">Форма Отзыва</a>
@@ -183,9 +183,9 @@
       очередной раз!
     </p>
     <div class="catalog-video">
-      <button class="catalog-video__button"></button>
-      <span class="catalog-video__icon"></span>
-      <span class="visually-hidden">Воспроизвести видео</span>
+      <button class="catalog-video__button">
+        <span class="visually-hidden">Воспроизвести видео</span>
+      </button>
       <div class="catalog-video__img">
         <picture>
           <source media="(min-width: 1200px)"
@@ -221,9 +221,10 @@
       </li>
     </ul>
     <a class="page-footer__develop-link" href="https://htmlacademy.ru/intensive/adaptive">Разработано
-      <svg class="page-footer__develop-icon" width="27" height="35" viewBox="0 0 27 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <svg class="page-footer__develop-icon" width="27" height="35" viewBox="0 0 27 35" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
         <use xlink:href="#develop-icon"></use>
       </svg>
+      <span class="visually-hidden">Разработано htmlacademy</span>
     </a>
   </footer>
   <script src="js/script.js"></script>

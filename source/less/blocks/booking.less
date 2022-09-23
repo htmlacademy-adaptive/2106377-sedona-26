@@ -19,21 +19,27 @@
     margin-bottom: 33px;
   }
 
+  .booking__form {
+    width: 100%;
+    max-width: 284px;
+    margin: 0 auto;
+  }
+
   .booking__link {
     display: block;
-    max-width: 186px;
+    max-width: 284px;
     margin: 0 auto;
     padding: 16px 49px;
+    border: none;
+    font-family: "PT Sans", "Arial", sans-serif;
+    font-weight: 700;
     font-size: 21px;
     line-height: @line-height-subtitle;
     text-transform: @text-transform-all-page;
     background-color: @background-color-blue;
     color: @color-white;
     text-decoration: none;
-  }
-
-  .disabled {
-    background: #e5e5e5;
+    cursor: pointer;
   }
 
   .booking__link:hover {
@@ -48,6 +54,10 @@
   .booking__link:focus {
     outline: 2px solid #d1c8c8;
   }
+
+  .booking__link:disabled {
+    background: #e5e5e5;
+  }
 }
 
 @media (min-width: @tablet-width) {
@@ -61,13 +71,17 @@
     font-size: 30px;
   }
 
+  .booking .booking__form {
+    max-width: 458px;
+  }
+
   .booking .booking__text {
     max-width: 435px;
     margin-bottom: 42px;
   }
 
   .booking .booking__link {
-    max-width: 216px;
+    max-width: 458px;
     padding: 15px 121px 17px;
   }
 }

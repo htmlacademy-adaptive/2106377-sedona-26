@@ -141,6 +141,10 @@
     outline: 2px solid #d1c8c8;
   }
 
+  .review-form__button:disabled {
+    background: #e5e5e5;
+  }
+
   .review-form__remark {
     display: block;
     font-weight: 400;
@@ -456,10 +460,13 @@
 
   .review-form .review-form__review::before {
     width: 37%;
+    top: 10px;
+    left: -100px;
   }
 
   .review-form .review-form__review::after {
     width: 37%;
+    right: -100px;
   }
 
   .review-form .review-form__button {
