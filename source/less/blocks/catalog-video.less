@@ -10,32 +10,26 @@
     width: 48px;
     height: 54px;
     padding: 0;
-    border: 0;
-    top: 35%;
-    left: 45%;
-    cursor: pointer;
-    z-index: -1;
-  }
-
-  .catalog-video__icon {
-    content: "";
-    position: absolute;
-    width: 48px;
-    height: 54px;
+    border: none;
+    background-color: transparent;
     background-image: url("../img/catalog/button-player.svg");
     background-position: center;
     background-repeat: no-repeat;
     top: 35%;
-    left: 44%;
+    left: 45%;
     cursor: pointer;
   }
 
-  .catalog-video__button + .catalog-video__icon:hover {
+  .catalog-video__button:hover {
     opacity: 0.8;
   }
 
-  .catalog-video__button + .catalog-video__icon:active {
+  .catalog-video__button:active {
     opacity: 0.5;
+  }
+
+  .catalog-video__button:focus {
+    outline: 2px solid #d1c8c8;
   }
 }
 
