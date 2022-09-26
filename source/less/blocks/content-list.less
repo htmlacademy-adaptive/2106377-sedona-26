@@ -71,9 +71,9 @@
     margin-bottom: 58px;
     display: grid;
     grid-template-columns: 324px 324px;
-    grid-template-rows: minmax(480px, 45%) auto auto;
+    grid-template-rows: min-content min-content min-content;
     gap: 0;
-    grid-auto-flow: column;
+    grid-auto-flow: row dense;
   }
 
   .content-list .content-list__item {
@@ -132,14 +132,14 @@
 
 @media (min-width: @desctop-width) {
   .content-list {
-    width: 100%;
+    max-width: 1200px;
     margin: 0;
     margin-bottom: 61px;
     display: grid;
     grid-template-columns: 400px 400px 400px;
-    grid-template-rows: minmax(400px, 45%) auto;
+    grid-template-rows: min-content min-content;
     gap: 0;
-    grid-auto-flow: column;
+    grid-auto-flow: row dense;
   }
 
   .content-list .content-list__item {

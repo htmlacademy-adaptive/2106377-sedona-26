@@ -56,7 +56,7 @@
 @media (min-width: @tablet-width) {
   .lead {
     max-width: 256px;
-    max-height: 256px;
+    min-height: 256px;
   }
 
   .lead .lead__title {
@@ -68,9 +68,7 @@
   }
 
   .lead .lead__title--medium {
-    max-width: 150px;
-    font-size: 21px;
-    line-height: 26px;
+    // max-width: 150px;
     margin-top: 44px;
   }
 
@@ -81,7 +79,10 @@
 
   .lead .lead__desc {
     max-width: 192px;
-    margin-bottom: 44px;
+  }
+
+  .lead__desc--medium {
+    margin-bottom: 0;
   }
 }
 
@@ -97,9 +98,6 @@
   }
 
   .lead .lead__title--medium {
-    max-width: 150px;
-    font-size: 21px;
-    line-height: 26px;
     margin-top: 52px;
     margin-bottom: 13px;
   }
@@ -111,7 +109,6 @@
 
   .lead .lead__desc {
     max-width: 273px;
-    margin-bottom: 53px;
   }
 
   .lead .lead__desc--medium {
